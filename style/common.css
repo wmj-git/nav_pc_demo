@@ -1,0 +1,30 @@
+blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+  margin: 0;
+  padding: 0; }
+
+*, :after, :before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 100%; }
+
+body {
+  margin: 0;
+  min-width: 1200px;
+  padding: 0;
+  font-family: 'PingFang SC','PingFangSC-Regular', 'Microsoft Yahei', 'sans-serif';
+  font-family: 'PingFangSC-Light','PingFangSC-Regular', 'Microsoft Yahei', 'sans-serif';
+  font-weight: normal;
+  background: #eee;
+  -webkit-font-smoothing: antialiased;
+  position: relative; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=common.css.map */

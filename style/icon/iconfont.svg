@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="GooglePlaylogo" unicode="&#58963;" d="M46.543-57.825V825.825A77.73 77.73 0 0 0 90.591 896l516.654-512-516.654-512a78.305 78.305 0 0 0-44.048 70.175M770.822 221.82L206.504-101.5 651.79 339.813l119.064-117.915M946.53 445.936A78.801 78.801 0 0 0 977.452 384a76.148 76.148 0 0 0-29.897-61.331l-120.103-68.624L696.333 384l131.119 129.955L946.5 445.859M206.504 869.5l564.318-323.32-119.064-117.915z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

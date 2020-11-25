@@ -1,0 +1,135 @@
+.navMenu {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  top: 0; }
+  .navMenu .navHeader {
+    margin: 0 auto;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    width: 100%;
+    text-align: center;
+    font-family: "kinderFont"; }
+    .navMenu .navHeader:after {
+      display: block;
+      clear: both;
+      content: '';
+      visibility: hidden; }
+    .navMenu .navHeader .navLogo {
+      text-align: right;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 54px; }
+      .navMenu .navHeader .navLogo img {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .navMenu .navHeader .navLogo > a {
+        width: 24px;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none; }
+      .navMenu .navHeader .navLogo .icon-logo {
+        font-size: 24px;
+        color: #fff; }
+      .navMenu .navHeader .navLogo > a > img {
+        transition: margin-top 0.5s;
+        -webkit-transition: margin-top 0.5s;
+        -moz-transition: margin-top 0.5s; }
+    .navMenu .navHeader .header-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .navMenu .navHeader .header-menu:after {
+        display: block;
+        content: "";
+        clear: both;
+        visibility: hidden; }
+      .navMenu .navHeader .header-menu > li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin: 0 1.5vw; }
+        .navMenu .navHeader .header-menu > li > a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          cursor: pointer;
+          transition: color 0.4s ease 0.1s; }
+    .navMenu .navHeader .header-right {
+      display: inline-block;
+      line-height: 54px;
+      vertical-align: middle; }
+      .navMenu .navHeader .header-right > li {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block; }
+      .navMenu .navHeader .header-right .notUser {
+        display: inline-block; }
+      .navMenu .navHeader .header-right .userMsg {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 50px;
+        cursor: pointer;
+        position: relative;
+        margin-top: 0;
+        display: none; }
+        .navMenu .navHeader .header-right .userMsg .userImgBox .userImgdefault {
+          vertical-align: middle; }
+        .navMenu .navHeader .header-right .userMsg span {
+          display: inline-block; }
+        .navMenu .navHeader .header-right .userMsg .userImg {
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background: #0258bf;
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: sub; }
+        .navMenu .navHeader .header-right .userMsg .expend {
+          margin-right: 5px; }
+          .navMenu .navHeader .header-right .userMsg .expend i {
+            font-size: 12px; }
+        .navMenu .navHeader .header-right .userMsg .selectTips {
+          position: absolute;
+          width: 12vw;
+          top: 3.5vw;
+          right: 0;
+          z-index: 30;
+          line-height: 40px;
+          list-style-type: none;
+          background: #fff;
+          border-radius: 4px;
+          color: #999;
+          display: none;
+          font-size: 14px; }
+          .navMenu .navHeader .header-right .userMsg .selectTips .arrows {
+            display: inline-block;
+            border-width: 0 0.4vw 0.5vw 0.4vw;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            position: absolute;
+            top: -6px;
+            right: 1vw;
+            border-color: transparent transparent #fff transparent; }
+          .navMenu .navHeader .header-right .userMsg .selectTips li {
+            width: 100%;
+            padding-left: 1vw; }
+            .navMenu .navHeader .header-right .userMsg .selectTips li:last-child {
+              border: none !important; }
+    .navMenu .navHeader .menu-list {
+      text-align: center;
+      display: inline-block;
+      line-height: 54px; }
+    .navMenu .navHeader .topCover {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20vw;
+      display: block;
+      background-image: linear-gradient(to bottom, rgba(2, 88, 191, 0.3), rgba(2, 88, 191, 0)); }
+
+/*# sourceMappingURL=menu.css.map */

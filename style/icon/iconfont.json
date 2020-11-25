@@ -1,0 +1,16 @@
+{
+  "id": "2228585",
+  "name": "school",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5978687",
+      "name": "Google Play logo",
+      "font_class": "GooglePlaylogo",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    }
+  ]
+}
