@@ -23,179 +23,41 @@
     <div class="loadBg"></div>
     <div class="loadIcon"></div>
 </div>
-
-<header>
-    <div class="navMenu">
-        <div class="navHeader">
-            <span class="topCover"></span>
-            <div class="navLogo">
-                <a href="#">
-                    <i class="iconfont icon-logo">&#xe653;</i>
-                </a>
-            </div>
-            <ul class="header-menu menu-list">
-
-                <li><a key="" href="#">一级导航one</a></li>
-
-                <li><a key="" href="#">一级导航two</a></li>
-
-                <li><a key="" href="#">一级导航three</a></li>
-
-                <li><a key="" href="#">二级导航one</a></li>
-
-                <li><a key="" href="#">一级导航four</a></li>
-
-                <li><a key="" href="#">一级导航five</a></li>
-
-                <li><a key="" href="#">一级导航six</a></li>
-
-                <li><a key="" href="#">一级导航seven</a></li>
-
-                <li><a key="" href="#">一级导航eight</a></li>
-
-            </ul>
-            <ul class="header-menu header-right">
-                <li class="userMsg">
-                    <span class="userImgBox">
-                        <span class="userImg"></span>
-                        <span class="userImgdefault"></span>
-                    </span>
-
-                    <span class="userName"></span>
-                    <span class="expend"><i class="iconfont icon-style iconInnerText">&#xe611;</i></span>
-                    <ul class="selectTips">
-                        <span class="arrows"></span>
-                        <li class="accountSet">账号设置</li>
-                        <li class="admissionApply">一级导航eight申请</li>
-                        <li class="application">一级导航seven申请</li>
-                        <li class="exit">退出</li>
-                    </ul>
-                </li>
-                <!--<li class="notUser">-->
-                    <!--<a class="nav-login"><i class="iconfont icon-style">&#xe617;</i></a>-->
-                <!--</li>-->
-                <!--<li class="lang">-->
-                    <!--<a id="changLanguageButton"><i class="iconfont icon-style iconInnerText">&#xe625;</i></a>-->
-                <!--</li>-->
-            </ul>
-
-        </div>
-    </div>
-
-</header>  <!--二级菜单-->
+<div id="header"></div>
+<!--二级菜单-->
 <div id="pcMenu">
     <div class="menu-wrapper">
         <div class="menu-list-wrapper">
-            <div class="nav-wrapper">
-                <div class="first-menu">
-
-                    <ul class="first-menu-right menu-style">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <ul class="first-menu-left menu-style">
-
-                        <li data-url="#">
-                            <a href="#">一级导航one</a>
-
-                        </li>
-
-                        <li data-url="">
-                            <a href="#">一级导航two</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航three</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">二级导航one</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航four</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航five</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航six</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航seven</a>
-
-                        </li>
-
-                        <li data-url="#">
-                            <a href="#">一级导航eight</a>
-
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+            <div class="nav-wrapper" id="secondNav"></div> <!--二级菜单重复的部分-->
             <div class="nav-detail-wrapper">
                 <div class="second-menu">
                     <div class="menu-wrapper-logo">
                         <a class="logo-a" href="">
                             <i class="iconfont icon-logo">&#xe653;</i>
-
-
                         </a>
                     </div>
                     <ul class="second-menu-left menu-style">
-
                         <li id="item_one">
-
                             <a onclick="hashFun('item_one')">二级导航one</a>
-
                         </li>
-
                         <li id="item_two">
-
                             <a onclick="hashFun('item_two')">二级导航two</a>
-
                         </li>
-
                         <li id="item_three">
-
                             <a onclick="hashFun('item_three')">二级导航three</a>
-
                         </li>
-
                         <li id="item_four">
-
                             <a onclick="hashFun('item_four')">二级导航four</a>
-
                         </li>
-
                         <li id="item_five">
-
                             <a onclick="hashFun('item_five')">二级导航five</a>
-
                         </li>
-
                         <li id="item_six">
-
                             <a onclick="hashFun('item_six')">二级导航six</a>
-
                         </li>
-
                         <li id="item_seven">
-
                             <a onclick="hashFun('item_seven')">二级导航seven</a>
-
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -240,6 +102,8 @@
 <script src="js/secondHeaderNav.js"></script>
 <script>
     window.onload = function () {
+        $("#header").load("header/firstNav.html");
+        $("#secondNav").load("header/secondNav.html");
         (function () {
             $('loadBg').fadeOut();
             setTimeout(function () {
@@ -247,7 +111,6 @@
                 $('#loading').fadeOut();
             }, 800)
         })();
-
     }
 </script>
 </body>

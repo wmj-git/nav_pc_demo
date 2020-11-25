@@ -32,11 +32,11 @@ function scrollBanner() {
 //二级菜单logo的颜色
 var pathName = window.location.pathname;
 var logoColor = "rgb(2, 88, 191)";
-if (pathName.indexOf("primary") != -1) {
+if (pathName.indexOf("primary") !== -1) {
     logoColor = "rgb(63,176,199)";
-} else if (pathName.indexOf("middle") != -1) {
+} else if (pathName.indexOf("middle") !== -1) {
     logoColor = "rgb(65,146,222)";
-} else if (pathName.indexOf("kindergarten") != -1) {
+} else if (pathName.indexOf("kindergarten") !== -1) {
     logoColor = "rgb(101,169,8)";
 }
 
@@ -57,7 +57,7 @@ $(window).scroll(function () {
         var mobileTop = topInstance - scrollInstance;
         toDown = $('html').scrollTop();
         if ((top <= 0 && $(window).width() > '1024') || (mobileTop <= 0 && $(window).width() <= '1024')) {
-            $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '0')
+            $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '0');
             $(".menu-wrapper .menu-list-wrapper").slideDown('fast')
             $(".menu-wrapper .menu-list-wrapper").addClass("menu-list-fixed");
             $(".menu-wrapper .menu-wrapper-logo").css({
@@ -67,7 +67,7 @@ $(window).scroll(function () {
                 'transition': 'transform .25s'
             })
             if (toUp < toDown) { // 向下
-                $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '0')
+                $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '0');
                 setTimeout(function () {
                     $(".menu-wrapper .menu-wrapper-logo").css({
                         'transform': 'translateY(0)',
@@ -82,7 +82,7 @@ $(window).scroll(function () {
                     })
                 }, 200);
             } else { // 向上
-                $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '64px')
+                $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '64px');
 
                 $(".menu-wrapper .menu-wrapper-logo").css({
                     'transform': 'translateY(-56px)',
@@ -99,7 +99,7 @@ $(window).scroll(function () {
                 toUp = toDown;
             }, 0);
         } else {
-            $(".menu-wrapper .menu-list-wrapper").fadeOut('fast')
+            $(".menu-wrapper .menu-list-wrapper").fadeOut('fast');
             $(".menu-wrapper .menu-list-wrapper").removeClass("menu-list-fixed");
         }
     }
