@@ -148,6 +148,9 @@
           text-decoration: none;
           transition: color .4s ease;
           -webkit-transition: color .4s ease;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
           &:hover {
             color: #333;
 
@@ -203,12 +206,13 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .menu-wrapper .nav-wrapper .first-menu {
-    max-width: 95%;
-  }
-
   .menu-list-wrapper .nav-detail-wrapper .second-menu {
     max-width: 95%;
+  }
+  .menu-wrapper {
+    & .nav-wrapper .first-menu {
+      max-width: 95%;
+    }
   }
 }
 

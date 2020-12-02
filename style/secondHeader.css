@@ -127,7 +127,10 @@
           cursor: pointer;
           text-decoration: none;
           transition: color .4s ease;
-          -webkit-transition: color .4s ease; }
+          -webkit-transition: color .4s ease;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
           .menu-wrapper .menu-list-wrapper .second-menu-left > li > a:hover {
             color: #333; }
     .menu-wrapper .menu-list-wrapper .menu-wrapper-logo {
@@ -169,10 +172,10 @@
     -moz-transition: -moz-transform .25s; }
 
 @media screen and (max-width: 1200px) {
-  .menu-wrapper .nav-wrapper .first-menu {
+  .menu-list-wrapper .nav-detail-wrapper .second-menu {
     max-width: 95%; }
 
-  .menu-list-wrapper .nav-detail-wrapper .second-menu {
+  .menu-wrapper .nav-wrapper .first-menu {
     max-width: 95%; } }
 @media screen and (max-width: 1024px) {
   #pcMenu, .navMenu {

@@ -80,7 +80,7 @@ $(window).scroll(function () {
                         'transition': 'transform .25s'
                     })
 
-                    $(".menu-wrapper  .logo-a .icon-logo").css({
+                    $(".menu-wrapper  .logo-a .icon-GooglePlaylogo").css({
                         color: logoColor,
                         'transition': 'color .6s'
                     })
@@ -94,7 +94,7 @@ $(window).scroll(function () {
                     '-moz-transform': 'translateY(-56px)',
                     'transition': 'transform .25s'
                 })
-                $(".menu-wrapper  .icon-logo").css({
+                $(".menu-wrapper  .icon-GooglePlaylogo").css({
                     color: "#fff",
                     'transition': 'color .6s'
                 })
