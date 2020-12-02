@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "13684417",
+      "name": "向右按钮",
+      "font_class": "right",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "6756285",
+      "name": "菜单",
+      "font_class": "first_nav",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "13008641",
+      "name": "菜单",
+      "font_class": "second_nav",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "5978687",
       "name": "Google Play logo",
       "font_class": "GooglePlaylogo",

@@ -52,9 +52,13 @@ $(window).scroll(function () {
     if ($(".menu-wrapper").length) {
 
         var topInstance = $(".menu-wrapper").offset().top;
+        var topInstanceMobile = $(".mobile-menu-wrapper").offset().top;
+
         var scrollInstance = $(document).scrollTop();
         var top = topInstance - scrollInstance;
-        var mobileTop = topInstance - scrollInstance;
+        // var mobileTop = topInstance - scrollInstance;
+        var mobileTop = topInstanceMobile - scrollInstance;
+
         toDown = $('html').scrollTop();
         if ((top <= 0 && $(window).width() > '1024') || (mobileTop <= 0 && $(window).width() <= '1024')) {
             $('.menu-wrapper .menu-list-wrapper .nav-wrapper .first-menu .first-menu-left').css('height', '0');
@@ -158,7 +162,7 @@ $(function () {
     // 鼠标hover变主题色
     $(".navMenu .header-menu li").on('mouseover', function () {
 
-        var attr = $(this).find('a').attr('key')
+        var attr = $(this).find('a').attr('key');
 
         // hoverColor = '#0258bf'
         // if (attr == '/kindergarten') {
@@ -173,30 +177,32 @@ $(function () {
         //     hoverColor = '#0258bf'
         // }
 
-        $(this).find('a').css('color', '#fff')
+        $(this).find('a').css('color', '#fff');
         if (attr == pathName) {
-            $(this).find('a').css({'color': '#fff'})
+            $(this).find('a').css({'color': '#fff'});
         }
-    })
+    });
     $(".navMenu .header-menu li").on('mouseout', function () {
         var attr = $(this).find('a').attr('key')
         $(this).find('a').css('color', 'rgba(255,255,255,0.7)')
         if (attr == pathName) {
-            $(this).find('a').css({'color': '#fff'})
+            $(this).find('a').css({'color': '#fff'});
         }
-    })
+    });
 
     // 中间菜单 二级导航 hover
     $('.menu-list-wrapper .second-menu-left li').on('mouseover', function () {
         if ($(this).find('a').css('color') !== logoColor) {
-            $(this).find('a').css('color', '#666')
+            $(this).find('a').css('color', '#666');
         }
-    })
+    });
     $('.menu-list-wrapper .second-menu-left li').on('mouseout', function () {
         if ($(this).find('a').css('color') !== logoColor) {
-            $(this).find('a').css('color', '#999')
+            $(this).find('a').css('color', '#999');
         }
-    })
+    });
+
+
 
     //根据不同的学段显示不同的二级菜单颜色
     if (pathName.indexOf("primary") != -1) {//小学
@@ -225,6 +231,6 @@ $(function () {
         $(".navMenu .navHeader .navLogo .icon-logo").html("&#xe653;");
         $(".menu-wrapper .menu-list-transform .logo-a .icon-logo").css({
             color: '#0258bf'
-        })
+        });
     }
 });

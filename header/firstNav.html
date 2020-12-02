@@ -4,43 +4,125 @@
             <span class="topCover"></span>
             <div class="navLogo">
                 <a href="#">
-                    <i class="iconfont icon-logo">&#xe653;</i>
+                    <i class="iconfont">&#xe653;</i>
                 </a>
             </div>
             <ul class="header-menu menu-list">
-                <li><a key="" href="#">一级导航one</a></li>
-                <li><a key="" href="#">一级导航two</a></li>
-                <li><a key="" href="#">一级导航three</a></li>
-                <li><a key="" href="#">二级导航one</a></li>
-                <li><a key="" href="#">一级导航four</a></li>
-                <li><a key="" href="#">一级导航five</a></li>
-                <li><a key="" href="#">一级导航six</a></li>
-                <li><a key="" href="#">一级导航seven</a></li>
-                <li><a key="" href="#">一级导航eight</a></li>
-            </ul>
-            <ul class="header-menu header-right">
-                <li class="userMsg">
-                    <span class="userImgBox">
-                        <span class="userImg"></span>
-                        <span class="userImgdefault"></span>
-                    </span>
-                    <span class="userName"></span>
-                    <span class="expend"><i class="iconfont icon-style iconInnerText">&#xe611;</i></span>
-                    <ul class="selectTips">
-                        <span class="arrows"></span>
-                        <li class="accountSet">账号设置</li>
-                        <li class="admissionApply">一级导航eight申请</li>
-                        <li class="application">一级导航seven申请</li>
-                        <li class="exit">退出</li>
-                    </ul>
-                </li>
-                <!--<li class="notUser">-->
-                <!--<a class="nav-login"><i class="iconfont icon-style">&#xe617;</i></a>-->
-                <!--</li>-->
-                <!--<li class="lang">-->
-                <!--<a id="changLanguageButton"><i class="iconfont icon-style iconInnerText">&#xe625;</i></a>-->
-                <!--</li>-->
+                <li><a key="" href="#">关于行知国际部</a></li>
+                <li><a key="" href="#">新闻动态</a></li>
+                <li><a key="" href="#">国外留学</a></li>
+                <li><a key="" href="#">国际交流</a></li>
+                <li><a key="" href="#">入学</a></li>
+                <li><a key="" href="#">智慧校园</a></li>
+                <li><a key="" href="#">国际高中部</a  ></li>
+                <li><a key="" href="#">应聘</a></li>
             </ul>
         </div>
     </div>
+    <div class="mobile-news-menu" id='mobile-news-menu'>
+        <span class="list firstMenu"><i class="iconfont icon-first_nav"></i></span>
+        <div class="logo firstLogo"><a href="/"><i class="iconfont icon-GooglePlaylogo"></i></a></div>
+        <ul class="sliderMenu">
+            <li class="menuType">
+                <a key="" href="#">关于行知国际部</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">新闻动态</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">国外留学</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">国际交流</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">入学</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">智慧校园</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">国际高中部</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+            <li class="menuType">
+                <a key="" href="#">应聘</a>
+                <span class="rightIcon"><i class="iconfont icon-right"></i></span>
+            </li>
+        </ul>
+        <div class="opacity"></div>
+    </div>
 </header>
+<script>
+    // 移动端头部一级菜单显示隐藏
+    var mo = function (e) {
+        e.preventDefault()
+    };
+    $('#mobile-news-menu .list').on('click', function () {
+        console.log('点击list');
+        $('#mobile-news-menu .sliderMenu').css({
+            'left': '0',
+        });
+        $('#mobile-news-menu .opacity').css('display', 'block');
+        document.body.style.overflow = 'hidden';
+        document.addEventListener("touchmove", mo, false); //禁止页面滑动
+    });
+    $('#mobile-news-menu .opacity').on('click', function () {
+        $('#mobile-news-menu .sliderMenu').css('left', '-75%')
+        $('#mobile-news-menu .opacity').css('display', 'none')
+        document.body.style.overflow = ''; //出现滚动条
+        document.removeEventListener("touchmove", mo, false);
+    });
+
+    // 移动端中间一级菜单显示隐藏
+    $('#second-mobile-news-menu .list').on('click', function () {
+        $('#second-mobile-news-menu .sliderMenu').css({
+            'left': '0',
+        });
+        $('#second-mobile-news-menu .opacity').css('display', 'block');
+        document.body.style.overflow = 'hidden';
+        document.addEventListener("touchmove", mo, false); //禁止页面滑动
+    });
+    $('#second-mobile-news-menu .opacity').on('click', function () {
+        $('#second-mobile-news-menu .sliderMenu').css('left', '-75%');
+        $('#second-mobile-news-menu .opacity').css('display', 'none');
+        document.body.style.overflow = ''; //出现滚动条
+        document.removeEventListener("touchmove", mo, false);
+    });
+
+    // 移动端二级导航锚点跳转显示隐藏
+    $('.mobile-menu-wrapper .nav-detail-wrapper .second-menu-mobile').on('click', function (event) {
+        event.stopPropagation();
+        // $('.mobile-menu-wrapper .nav-detail-wrapper .secondSlideMenu').show()
+        var display = $('.mobile-menu-wrapper .nav-detail-wrapper .secondSlideMenu').css('display');
+        if (display == 'none') {
+            display = 'block';
+        } else {
+            display = 'none';
+        }
+        $('.mobile-menu-wrapper .nav-detail-wrapper .secondSlideMenu').css('display', display);
+
+    });
+
+    $(document).click(function () {
+        $(".mobile-menu-wrapper .nav-detail-wrapper .secondSlideMenu").hide();
+    });
+
+    //  当前菜单页面变蓝色
+    $('.mobile-news-menu .sliderMenu .menuType').on('click', function () {
+        $(this).find('aLink').css('color', '#0258bf');
+    });
+
+    var menuType = $('.mobile-news-menu .sliderMenu .menuType');
+    menuType.each(function () {
+        if ($(this).find('.aLink').attr('key') == window.location.pathname) {
+            $(this).find('.aLink').css('color', '#0258bf');
+        }
+    });
+</script>
