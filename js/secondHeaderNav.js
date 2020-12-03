@@ -158,7 +158,16 @@ $(function () {
             $(liList[i]).siblings().removeClass("active");
         }
     }
-
+    // 移动端初始导航高亮
+    let menuType = $('.sliderMenu .menuType a');
+    menuType.each(function () {
+        console.log('da',$(this)[0])
+        let _winHref = String(window.location); // 监听url变化
+        if ($(this)[0].href == _winHref) { //$(this[0].href):当前url
+            $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
+            $(this).closest('ul').parent("li").addClass("active").siblings().removeClass("active");
+        }
+    });
     // 鼠标hover变主题色
     $(".navMenu .header-menu li").on('mouseover', function () {
 
@@ -201,8 +210,6 @@ $(function () {
             $(this).find('a').css('color', '#999');
         }
     });
-
-
 
     //根据不同的学段显示不同的二级菜单颜色
     if (pathName.indexOf("primary") != -1) {//小学

@@ -4,11 +4,11 @@
         <li></li>
     </ul>
     <ul class="first-menu-left menu-style">
-        <li data-url="#">
-            <a href="#">关于行知国际部</a>
+        <li data-url="#index">
+            <a href="index.html">关于行知国际部</a>
         </li>
         <li data-url="">
-            <a href="#">新闻动态</a>
+            <a href="news.html">新闻动态</a>
         </li>
         <li data-url="#">
             <a href="#">国外留学</a>
@@ -30,3 +30,14 @@
         </li>
     </ul>
 </div>
+<script>
+    /*pc端滑动固定导航一级菜单高亮问题*/
+    let navList = $(".first-menu-left.menu-style li a");
+    navList.each(function () {
+        let _winHref = String(window.location); // 监听url变化
+        if ($(this)[0].href == _winHref) { //$(this[0].href):当前url
+            $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
+            $(this).closest('ul').parent("li").addClass("active").siblings().removeClass("active");
+        }
+    });
+</script>

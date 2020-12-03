@@ -59,6 +59,8 @@
           transition: color 0.4s ease 0.1s; }
           .navMenu .navHeader .header-menu > li > a:hover {
             color: white; }
+          .navMenu .navHeader .header-menu > li > a.active {
+            color: #fff; }
     .navMenu .navHeader .header-right {
       display: inline-block;
       line-height: 54px;
@@ -199,6 +201,8 @@
       font-size: 16px;
       border-bottom: 1px solid #eaeaea;
       cursor: pointer; }
+      #mobile-news-menu .aLink.active {
+        color: #0258bf; }
     #mobile-news-menu .rightIcon {
       position: absolute;
       right: 0px;
