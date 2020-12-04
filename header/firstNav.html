@@ -59,6 +59,8 @@
         <div class="opacity"></div>
     </div>
 </header>
+<script src="js/common.js"></script>
+
 <script>
     // 移动端头部一级菜单显示隐藏
     $(function () {
@@ -66,7 +68,6 @@
             e.preventDefault()
         };
         $('#mobile-news-menu .list').on('click', function () {
-            console.log('点击list');
             $('#mobile-news-menu .sliderMenu').css({
                 'left': '0',
             });
@@ -121,26 +122,7 @@
             $(this).siblings('li').find('.aLink').css('color', '#999');
         });
 
-        let menuType = $('.mobile-news-menu .sliderMenu .menuType a');
-        let navList = $(".header-menu.menu-list li a");
-        navList.each(function () {
-            let _winHref = String(window.location); // 监听url变化
-            if ($(this)[0].href == _winHref) { //$(this[0].href):当前url
-                $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
-                $(this).closest('ul').parent("li").addClass("active").siblings().removeClass("active");
-            }
-        });
-        menuType.each(function () {
-            /*if ($(this).find('.aLink').attr('key') == window.location.pathname) {
-                $(this).find('.aLink').css('color', '#0258bf');
-            }*/
-
-            let _winHref = String(window.location); // 监听url变化
-            if ($(this)[0].href == _winHref) { //$(this[0].href):当前url
-                $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
-                $(this).closest('ul').parent("li").addClass("active").siblings().removeClass("active");
-            }
-        });
+        navHighLight($('ul li a'));
     });
 
 </script>

@@ -30,14 +30,8 @@
         </li>
     </ul>
 </div>
+<script src="js/common.js"></script>
 <script>
     /*pc端滑动固定导航一级菜单高亮问题*/
-    let navList = $(".first-menu-left.menu-style li a");
-    navList.each(function () {
-        let _winHref = String(window.location);
-        if ($(this)[0].href == _winHref) {
-            $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
-            $(this).closest('ul').parent("li").addClass("active").siblings().removeClass("active");
-        }
-    });
+    navHighLight($(".first-menu-left.menu-style li a"));
 </script>
