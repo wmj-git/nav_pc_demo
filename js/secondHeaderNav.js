@@ -161,7 +161,6 @@ $(function () {
     // 移动端初始导航高亮
     let menuType = $('.sliderMenu .menuType a');
     menuType.each(function () {
-        console.log('da',$(this)[0])
         let _winHref = String(window.location); // 监听url变化
         if ($(this)[0].href == _winHref) { //$(this[0].href):当前url
             $(this).addClass("active").parent('li').siblings().find('a').removeClass("active");
