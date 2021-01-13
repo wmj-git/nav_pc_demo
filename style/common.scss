@@ -22,6 +22,9 @@ body {
 a{
   text-decoration: none;
 }
+input, textarea, select, a, button:focus {
+  outline: none;
+}
 
 #loading{
   position: fixed;
