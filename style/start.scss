@@ -82,6 +82,17 @@ input, textarea, select, a, button:focus {
         }
       }
     }
+    & .figure_box{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      & .figure{
+        opacity: 0;
+        transition: opacity linear .3s;
+      }
+    }
     & .start_center {
       position: absolute;
       bottom: 200px;
@@ -153,19 +164,6 @@ input, textarea, select, a, button:focus {
               margin-right: 1.5rem;
             }
           }
-          & .figure{
-            position: relative;
-            bottom: 0;
-            opacity: 0;
-            transition: opacity linear .3s;
-            &.left{
-              left: 15%;
-            }
-            &.right{
-              right: 15%;
-            }
-          }
-
         }
       }
     }
@@ -180,9 +178,7 @@ input, textarea, select, a, button:focus {
     }
   }
 }
-.tree{
 
-}
 @media screen and (max-width: 768px) {
   .start_body .start_page {
     & .start_header {
@@ -219,6 +215,12 @@ input, textarea, select, a, button:focus {
         }
       }
     }
+    & .figure_box{
+      & .figure{
+        max-width: 300px;
+      }
+    }
+
   }
   img.logo_img {
     max-width: 120px;

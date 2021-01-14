@@ -67,6 +67,15 @@ input, textarea, select, a, button:focus {
         .start_body .start_page .start_header .header_box .header_item:last-child {
           display: flex;
           align-items: center; }
+    .start_body .start_page .figure_box {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .start_body .start_page .figure_box .figure {
+        opacity: 0;
+        transition: opacity linear .3s; }
     .start_body .start_page .start_center {
       position: absolute;
       bottom: 200px;
@@ -127,15 +136,6 @@ input, textarea, select, a, button:focus {
                 -o-transform: translate(-57px, 0); }
             .start_body .start_page .start_center .center_box .center_item .center_btn img {
               margin-right: 1.5rem; }
-          .start_body .start_page .start_center .center_box .center_item .figure {
-            position: relative;
-            bottom: 0;
-            opacity: 0;
-            transition: opacity linear .3s; }
-            .start_body .start_page .start_center .center_box .center_item .figure.left {
-              left: 15%; }
-            .start_body .start_page .start_center .center_box .center_item .figure.right {
-              right: 15%; }
     .start_body .start_page .start_footer {
       position: absolute;
       bottom: 2rem;
@@ -165,6 +165,8 @@ input, textarea, select, a, button:focus {
           transform: scale(0.8); }
         .start_body .start_page .start_center .center_box .center_item .center_btn span {
           font-size: 16px; }
+  .start_body .start_page .figure_box .figure {
+    max-width: 300px; }
 
   img.logo_img {
     max-width: 120px;
