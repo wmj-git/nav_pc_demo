@@ -43,6 +43,7 @@ input, textarea, select, a, button:focus {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
     & .start_header {
       width: 100%;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -54,6 +55,9 @@ input, textarea, select, a, button:focus {
         width: 80%;
         margin: 0 auto;
         & .header_item {
+          & select{
+            margin-right: 1.6rem;
+          }
           & .btn {
             background: transparent;
             border: none;
@@ -65,6 +69,7 @@ input, textarea, select, a, button:focus {
             &:first-child {
               margin-right: .6rem;
             }
+
             &:hover{
               color: #fff;
               cursor: pointer;
@@ -79,14 +84,13 @@ input, textarea, select, a, button:focus {
     }
     & .start_center {
       position: absolute;
-      bottom: 135px;
+      bottom: 200px;
       width: 100%;
       color: rgba(255, 255, 255, 0.8);
       & .center_box {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 50%;
+        justify-content: space-around;
         margin: 0 auto;
         font-size: 1.2rem;
         & .center_item {
@@ -149,6 +153,18 @@ input, textarea, select, a, button:focus {
               margin-right: 1.5rem;
             }
           }
+          & .figure{
+            position: absolute;
+            bottom: 115px;
+            opacity: 0;
+            transition: opacity linear .3s;
+            &.left{
+              left: 15%;
+            }
+            &.right{
+              right: 15%;
+            }
+          }
 
         }
       }
@@ -164,7 +180,9 @@ input, textarea, select, a, button:focus {
     }
   }
 }
+.tree{
 
+}
 @media screen and (max-width: 768px) {
   .start_body .start_page {
     & .start_header {

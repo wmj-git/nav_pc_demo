@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="style/icon/iconfont.css">
     <link rel="stylesheet" href="style/start.css">
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/font.js"></script>
-    <script src="js/start.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/language.js"></script>
+    <script src="js/start/font.js"></script>
+    <script src="js/start/start.js"></script>
+    <script src="js/start/jquery.cookie.js"></script>
+    <script src="js/start/language.js"></script>
+    <script src="js/start/bluebird.min.js"></script>
 </head>
 <body class="start_body">
+
 <div class="start_page">
     <div class="start_header">
         <div class="header_box">
@@ -25,7 +27,7 @@
                 <img src="images/start/logo.png" class="logo_img">
             </div>
             <div class="header_item">
-                <!--<input type="button" class="btn" id="lang" value="cn" onclick="html2Cookie()">-->
+                <!--<div class="btn" id="lang" onclick="html2Cookie()">-->
                 <select id="languageID" onchange="html2Cookie()"></select>
                 <button class="btn"><i class="iconfont">&#xe628;</i></button>
             </div>
@@ -34,7 +36,9 @@
     </div>
     <div class="start_center">
         <div class="center_box letter_font">
-            <div class="center_item" onclick="internationalFn()">
+            <div class="center_item" onclick="internationalFn()" onmouseenter="mouse_enter_Fn()"
+                 onmouseleave="mouse_leave_Fn()">
+                <img src="images/start/figure.gif" class="figure left">
                 <div class="center_btn">
                     <div class="icon education">
                         <img src="images/start/education.png">
@@ -43,7 +47,9 @@
                 </div>
                 <p set-lan="html:international.sub_title"></p>
             </div>
-            <div class="center_item" id="professional">
+            <div class="center_item" id="professional" onmouseenter="mouse_enter_right_Fn()"
+                 onmouseleave="mouse_leave_right_Fn()">
+                <img src="images/start/figure1.gif" class="figure right">
                 <div class="center_btn">
                     <div class="icon">
                         <img src="images/start/book.png">
@@ -60,4 +66,6 @@
 </div>
 </body>
 </html>
-<script src="js/lang.js"></script>
+<script src="js/start/lang.js"></script>
+
+

@@ -38,7 +38,8 @@ input, textarea, select, a, button:focus {
     left: 0;
     top: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    z-index: -1; }
     .start_body .start_page .start_header {
       width: 100%;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
@@ -49,6 +50,8 @@ input, textarea, select, a, button:focus {
         height: 100px;
         width: 80%;
         margin: 0 auto; }
+        .start_body .start_page .start_header .header_box .header_item select {
+          margin-right: 1.6rem; }
         .start_body .start_page .start_header .header_box .header_item .btn {
           background: transparent;
           border: none;
@@ -66,14 +69,13 @@ input, textarea, select, a, button:focus {
           align-items: center; }
     .start_body .start_page .start_center {
       position: absolute;
-      bottom: 135px;
+      bottom: 200px;
       width: 100%;
       color: rgba(255, 255, 255, 0.8); }
       .start_body .start_page .start_center .center_box {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 50%;
+        justify-content: space-around;
         margin: 0 auto;
         font-size: 1.2rem; }
         .start_body .start_page .start_center .center_box .center_item {
@@ -125,6 +127,15 @@ input, textarea, select, a, button:focus {
                 -o-transform: translate(-57px, 0); }
             .start_body .start_page .start_center .center_box .center_item .center_btn img {
               margin-right: 1.5rem; }
+          .start_body .start_page .start_center .center_box .center_item .figure {
+            position: absolute;
+            bottom: 115px;
+            opacity: 0;
+            transition: opacity linear .3s; }
+            .start_body .start_page .start_center .center_box .center_item .figure.left {
+              left: 15%; }
+            .start_body .start_page .start_center .center_box .center_item .figure.right {
+              right: 15%; }
     .start_body .start_page .start_footer {
       position: absolute;
       bottom: 2rem;
