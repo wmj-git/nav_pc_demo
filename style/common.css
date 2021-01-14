@@ -75,4 +75,9 @@ input, textarea, select, a, button:focus {
     bottom: 0;
     margin: auto; }
 
+@media screen and (max-width: 768px) {
+  .mobile_img_logo {
+    width: 40px;
+    display: block; } }
+
 /*# sourceMappingURL=common.css.map */

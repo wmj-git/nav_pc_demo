@@ -9,7 +9,12 @@
     padding-right: 1.2vw;
     width: 100%;
     text-align: center;
-    font-family: "kinderFont"; }
+    font-family: "kinderFont";
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .navMenu .navHeader:after {
       display: block;
       clear: both;
@@ -20,12 +25,14 @@
       display: inline-block;
       vertical-align: middle;
       line-height: 54px; }
+      .navMenu .navHeader .navLogo .index_logo_pc {
+        width: 70px; }
       .navMenu .navHeader .navLogo img {
         width: 100%;
         display: inline-block;
         vertical-align: middle; }
       .navMenu .navHeader .navLogo > a {
-        width: 24px;
+        width: 40px;
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
@@ -40,7 +47,7 @@
     .navMenu .navHeader .header-menu {
       list-style: none;
       padding: 0;
-      margin: 0; }
+      margin: 0 10rem; }
       .navMenu .navHeader .header-menu:after {
         display: block;
         content: "";
@@ -61,6 +68,13 @@
             color: white; }
           .navMenu .navHeader .header-menu > li > a.active {
             color: #fff; }
+    .navMenu .navHeader .right_nav .btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem; }
+      .navMenu .navHeader .right_nav .btn.search {
+        margin-left: 1rem; }
     .navMenu .navHeader .header-right {
       display: inline-block;
       line-height: 54px;

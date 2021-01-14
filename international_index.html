@@ -11,14 +11,15 @@
     <link rel="stylesheet" type="text/css" href="style/menu.css"/>
     <link rel="stylesheet" type="text/css" href="style/secondHeader.css"/>
     <link rel="stylesheet" href="style/icon/iconfont.css">
-
+    <script src="js/jquery-3.1.1.js"></script>
     <style>
-        .content_item{
+        .content_item {
             align-items: center;
             justify-content: center;
             display: flex;
         }
-        video{
+
+        video {
             width: 100%;
             height: 100vh;
             object-fit: cover;
@@ -45,7 +46,7 @@
                 <div class="second-menu">
                     <div class="menu-wrapper-logo">
                         <a class="logo-a" href="">
-                            <i class="iconfont icon-GooglePlaylogo"></i>
+                            <img src="images/common/logo.png">
                         </a>
                     </div>
                     <ul class="second-menu-left menu-style">
@@ -82,10 +83,11 @@
             <div class="nav-wrapper">
                 <div class="mobile-news-menu" id="second-mobile-news-menu">
                     <span class="list"><i class="iconfont icon-first_nav"></i></span>
-                    <div class="logo"><a href="/?lang=zh-cn"><i class="iconfont icon-GooglePlaylogo"></i></a></div>
+                    <div class="logo"><a href="/?lang=zh-cn"><img src="images/common/logo.png" class="mobile_img_logo"></a>
+                    </div>
                     <ul class="sliderMenu">
                         <li class="menuType">
-                            <a href="index.html" class="aLink" key="index">关于行知国际部</a>
+                            <a href="international_index.html" class="aLink" key="index">关于行知国际部</a>
                             <span class="rightIcon"><i class="iconfont icon-right"></i></span>
                         </li>
 
@@ -126,7 +128,7 @@
                 <div class="second-menu-mobile">
                     <span class="mainTips">
                         <span class="mainTitle"><a>首页</a></span>
-                        <span class="mainIcon"><i class="iconfont icon-second_nav"></i></span>
+                        <span class="mainIcon"><img src="images/common/logo.png" class="mobile_img_logo"></span>
                     </span>
                 </div>
                 <ul class="secondSlideMenu">
@@ -151,8 +153,8 @@
 
 <!-- 将来页面要往这里填充具体的模板内容 -->
 <div class="allModules">
-    <div class= "content_item">
-        <video autoplay="autoplay" loop="loop"  muted="muted">
+    <div class="content_item">
+        <video autoplay="autoplay" loop="loop" muted="muted">
             <source src="style/video.mp4" type="video/mp4"/>
         </video>
     </div>
@@ -163,22 +165,28 @@
     <div class="recruitSwipe content_item" data-component="item_one" style="height: 1100px; background-color: #cccccc;">
         二级导航one内容内容内容
     </div>
-    <div class="grainPortrait content_item" data-component="item_two" style="height: 1100px; background-color: #6bcec8;">
+    <div class="grainPortrait content_item" data-component="item_two"
+         style="height: 1100px; background-color: #6bcec8;">
         二级导航two内容内容内容
     </div>
-    <div class="nav-about-contain content_item" data-component="item_three" style="height: 1100px; background-color: #eaeaea;">
+    <div class="nav-about-contain content_item" data-component="item_three"
+         style="height: 1100px; background-color: #eaeaea;">
         二级导航three内容内容内容
     </div>
-    <div class="nav-left-picture content_item" data-component="item_four" style="height: 1100px; background-color: rgba(156,142,240,0.49);">
+    <div class="nav-left-picture content_item" data-component="item_four"
+         style="height: 1100px; background-color: rgba(156,142,240,0.49);">
         二级导航four内容内容内容
     </div>
-    <div class="nav-right-picture content_item" data-component="item_five" style="height: 1100px; background-color: rgba(91,192,204,0.67);">
+    <div class="nav-right-picture content_item" data-component="item_five"
+         style="height: 1100px; background-color: rgba(91,192,204,0.67);">
         二级导航five内容内容内容
     </div>
-    <div class="onlyImgAndRemarks content_item" data-component="item_six" style="height: 1100px; background-color: rgba(99,234,153,0.38);">
+    <div class="onlyImgAndRemarks content_item" data-component="item_six"
+         style="height: 1100px; background-color: rgba(99,234,153,0.38);">
         二级导航six内容内容内容
     </div>
-    <div class="nav-know-more content_item" data-component="item_seven" style="height: 1100px; background-color: rgba(234,201,105,0.42);">
+    <div class="nav-know-more content_item" data-component="item_seven"
+         style="height: 1100px; background-color: rgba(234,201,105,0.42);">
         二级导航seven内容内容内容
     </div>
 

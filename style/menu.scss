@@ -11,25 +11,32 @@
     width: 100%;
     text-align: center;
     font-family: "kinderFont";
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:after {
       display: block;
       clear: both;
       content: '';
       visibility: hidden;
-
     }
     & .navLogo {
       text-align: right;
       display: inline-block;
       vertical-align: middle;
       line-height: 54px;
+      & .index_logo_pc{
+        width: 70px;
+      }
       & img {
         width: 100%;
         display: inline-block;
         vertical-align: middle;
       }
       &>a {
-        width: 24px;
+        width: 40px;
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
@@ -49,7 +56,7 @@
     & .header-menu {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 10rem;
       &:after {
         display: block;
         content: "";
@@ -73,6 +80,17 @@
           &.active{
             color: #fff;
           }
+        }
+      }
+    }
+    & .right_nav{
+      & .btn{
+        background: transparent;
+        border: none;
+        color: rgba(255,255,255,0.8);
+        font-size: 1rem;
+        &.search{
+          margin-left: 1rem;
         }
       }
     }
