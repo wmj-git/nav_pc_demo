@@ -128,8 +128,8 @@ input, textarea, select, a, button:focus {
             .start_body .start_page .start_center .center_box .center_item .center_btn img {
               margin-right: 1.5rem; }
           .start_body .start_page .start_center .center_box .center_item .figure {
-            position: absolute;
-            bottom: 115px;
+            position: relative;
+            bottom: 0;
             opacity: 0;
             transition: opacity linear .3s; }
             .start_body .start_page .start_center .center_box .center_item .figure.left {

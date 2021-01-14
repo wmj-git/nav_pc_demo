@@ -154,8 +154,8 @@ input, textarea, select, a, button:focus {
             }
           }
           & .figure{
-            position: absolute;
-            bottom: 115px;
+            position: relative;
+            bottom: 0;
             opacity: 0;
             transition: opacity linear .3s;
             &.left{
