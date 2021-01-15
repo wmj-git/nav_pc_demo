@@ -76,6 +76,12 @@ input, textarea, select, a, button:focus {
       .start_body .start_page .figure_box .figure {
         opacity: 0;
         transition: opacity linear .3s; }
+    .start_body .start_page svg {
+      width: 100%;
+      opacity: 1;
+      z-index: 100;
+      position: absolute;
+      transition: opacity linear .3s; }
     .start_body .start_page .start_center {
       position: absolute;
       bottom: 200px;
