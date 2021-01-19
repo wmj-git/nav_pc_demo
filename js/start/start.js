@@ -1,7 +1,9 @@
 function internationalFn() {
     window.location.href = "international_index.html"
 }
-
+function professionalFn() {
+    window.location.href = "professional_index.html"
+}
 function figure_bottom_Val() {
     let _height = $(".start_center").innerHeight();
     let _obj_bottom = parseInt($(".start_center").css('bottom').split('px')[0]);

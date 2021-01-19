@@ -3,8 +3,8 @@
 let SVG_NS = "http://www.w3.org/2000/svg";
 let MAX_FLOWER_AGE = 50;
 let MAX_GROWTH_TICKS = 15;
-let BRANCH_COLOR = "rgb(101, 67, 33)";
-// let BRANCH_COLOR = "rgb(35, 134, 47)";
+// let BRANCH_COLOR = "rgb(101, 67, 33)";
+let BRANCH_COLOR = "rgb(35, 134, 47)";
 
 
 // from http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
@@ -18,11 +18,11 @@ function shadeRGBColor(color, percent) {
     return "rgb(" + (Math.round((t - R) * p) + R) + "," + (Math.round((t - G) * p) + G) + "," + (Math.round((t - B) * p) + B) + ")";
 }
 
-let maxDepth = 9,
-    trunkWidth = 10;
-let branchShrinkage = 0.8;
+let maxDepth = 10,
+    trunkWidth = 14;
+let branchShrinkage = 0.85;
 let maxAngleDelta = Math.PI / 2;
-let delay = 30;
+let delay = 100;
 let svg = document.getElementById("svg");
 
 let scaleIncrement = 0.1;
@@ -32,7 +32,7 @@ let rotateIncrement = Math.PI * 2;
 
 let wind = 0;
 let windIncrement = 1;
-let maxWind = 2.0;
+let maxWind = 3.0;
 
 let createFlower = function createFlower(_ref) {
     let x = _ref.x;
@@ -43,8 +43,8 @@ let createFlower = function createFlower(_ref) {
     let growthPhase = 0;
     let attached = true;
     let hangPhase = 1;
-    // let scale = 0.5;
-    let scale = 2;
+    let scale = 0.5;
+    // let scale = 2;
     let rotation = 0;
     let element = document.createElementNS(SVG_NS, "use");
     element.setAttribute("href", "#flower");
@@ -221,14 +221,17 @@ let initer = function () {
 };
 function mouse_enter_right_Fn() {
     let _bototm = figure_bottom_Val();
+    $(".start_body .start_page").append("<span class='bg_hover'></span>");
+    $(".bg_hover").css('opacity', 0);
+    $(".bg_hover").stop().animate({opacity: '1'},1000);
     $("#svg").css({'opacity': "1", 'left': "26%", "height": "100%", "bottom":_bototm});
     SVG_NS = "http://www.w3.org/2000/svg";
     document.getElementById("svg").innerHTML = "";
     initer();
 }
-
 function mouse_leave_right_Fn() {
     $("#svg").css({'opacity': "0", "height": "0"});
+    $(".bg_hover").stop().animate({opacity: '0'},1000);
     setTimeout(function () {
         SVG_NS = "";
         document.getElementById("svg").innerHTML = "";
@@ -237,6 +240,9 @@ function mouse_leave_right_Fn() {
 
 function mouse_enter_Fn() {
     let _bototm = figure_bottom_Val();
+    $(".start_body .start_page").append("<span class='bg_hover'></span>");
+    $(".bg_hover").css('opacity', 0);
+    $(".bg_hover").stop().animate({opacity: '1'},1000);
     $("#svg").css({'opacity': "1", 'left': "-26%", "height": "100%", "bottom":_bototm});
     SVG_NS = "http://www.w3.org/2000/svg";
     document.getElementById("svg").innerHTML = "";
@@ -244,10 +250,11 @@ function mouse_enter_Fn() {
 }
 
 function mouse_leave_Fn() {
+    $(".bg_hover").stop().animate({opacity: '0'},1000);
     $("#svg").css({'opacity': "0", "height": "0"});
     setTimeout(function () {
         SVG_NS = "";
         document.getElementById("svg").innerHTML = "";
-    }, 400);
+    }, 1600);
 }
 
