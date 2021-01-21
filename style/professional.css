@@ -284,7 +284,7 @@
         .allModules .content_item.portrait_box .portrait_flex .flex_item {
           width: 30%; }
       .allModules .content_item.portrait_box .portrait_title {
-        margin-left: -50%;
+        margin-left: -50% !important;
         top: 9%; }
     .allModules .content_item.news_box {
       padding-bottom: 0; }
