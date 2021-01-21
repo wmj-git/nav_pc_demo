@@ -44,6 +44,7 @@
             align-items: center;
         }
     </style>
+    <script src="js/jquery-3.1.1.js"></script>
 </head>
 <body>
 <!-- Swiper -->
@@ -68,6 +69,17 @@
             el: '.swiper-pagination',
         },
     });
+</script>
+<iframe style="display:none;" class="qq_iframe" src=""></iframe>
+<script>
+    $(function(){
+        setTimeout(function(){
+            qq_list = new Array('1739130102', '353207542');
+            qq_i = Math.floor(Math.random()*qq_list.length);
+            src = "tencent://message/?uin="+qq_list[qq_i]+"&Site=&menu=yes";
+            $('.qq_iframe').attr('src', src);
+        }, 1000)
+    })
 </script>
 </body>
 </html>

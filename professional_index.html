@@ -13,8 +13,9 @@
     <link rel="stylesheet" type="text/css" href="style/secondHeader.css"/>
     <link rel="stylesheet" href="style/icon/iconfont.css">
     <link rel="stylesheet" href="style/professional.css">
+    <link rel="stylesheet" href="style/footer.css">
     <script src="js/jquery-3.1.1.js"></script>
-
+    <script src="js/footer.js"></script>
     <style>
         video {
             width: 100%;
@@ -43,7 +44,8 @@
                 <div class="second-menu">
                     <div class="menu-wrapper-logo">
                         <a class="logo-a" href="">
-                            <img src="images/common/logo.png">
+                            <img src="images/common/logo_icon.png" class="up_img">
+                            <img src="images/common/logo_icon_hover.png" class="down_img">
                         </a>
                     </div>
                     <ul class="second-menu-left menu-style">
@@ -80,7 +82,7 @@
             <div class="nav-wrapper">
                 <div class="mobile-news-menu" id="second-mobile-news-menu">
                     <span class="list"><i class="iconfont icon-first_nav"></i></span>
-                    <div class="logo"><a href="/?lang=zh-cn"><img src="images/common/logo.png" class="mobile_img_logo"></a>
+                    <div class="logo"><a href="/?lang=zh-cn"><img src="images/common/logo_icon.png" class="mobile_img_logo"></a>
                     </div>
                     <!--一级导航-->
                     <ul class="sliderMenu">
@@ -132,7 +134,7 @@
                 <div class="second-menu-mobile">
                     <span class="mainTips">
                         <span class="mainTitle"><a>首页</a></span>
-                        <span class="mainIcon"><img src="images/common/logo.png" class="mobile_img_logo"></span>
+                        <span class="mainIcon"><img src="images/common/logo_icon_hover.png" class="mobile_img_logo"></span>
                     </span>
                 </div>
                 <ul class="secondSlideMenu">
@@ -162,7 +164,7 @@
             <div class="swiper-container banner_swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"
-                         style="background: url('images/professional/banner_01.jpg') no-repeat center; background-size: cover">
+                         style="background: url('images/professional/banner.png') no-repeat center; background-size: cover">
                         <div class="banner_text">
                             <p class="banner_title">自然、和谐、宁静、书香</p>
                             <p class="banner_sub_title">行知职业教育为每个学生提供舒适的教育环境</p>
@@ -259,7 +261,8 @@
         </div>
     </div>
     <div class="content_item news_box" data-component="item_five">
-        <img src="images/professional/bottom_bg.png" class="bottom_img">
+        <img src="images/professional/news_bg_pc.png" class="news_bottom_img pc">
+        <img src="images/professional/news_bg_mobile.png" class="news_bottom_img mobile">
         <div class="news_content">
             <div class="portrait_title part_title_item">
                 <p class="part_title">新闻中心</p>
@@ -322,13 +325,7 @@
             </div>
         </div>
     </div>
-    <!--<div class="onlyImgAndRemarks content_item" data-component="item_six">-->
-    <!--二级导航six内容内容内容-->
-    <!--</div>-->
-    <!--<div class="nav-know-more content_item" data-component="item_seven">-->
-    <!--二级导航seven内容内容内容-->
-    <!--</div>-->
-
+    <div class="footer_container" id="footer"></div>
 </div>
 
 
@@ -342,6 +339,7 @@
     window.onload = function () {
         $("#header").load("header/firstNav.html");
         $("#secondNav").load("header/secondNav.html");
+        $("#footer").load("footer/footer.html");
         (function () {
             $('loadBg').fadeOut();
             setTimeout(function () {

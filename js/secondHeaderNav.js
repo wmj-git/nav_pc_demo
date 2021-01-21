@@ -78,7 +78,13 @@ $(window).scroll(function () {
                         '-webkit-transform': 'translateY(0)',
                         '-moz-transform': 'translateY(0)',
                         'transition': 'transform .25s'
-                    })
+                    });
+                    $(".menu-wrapper .menu-wrapper-logo .logo-a .down_img").css({
+                        'display': 'block',
+                    });
+                    $(".menu-wrapper .menu-wrapper-logo .logo-a .up_img").css({
+                        'display': 'none',
+                    });
 
                     $(".menu-wrapper  .logo-a .icon-GooglePlaylogo").css({
                         color: logoColor,
@@ -93,7 +99,13 @@ $(window).scroll(function () {
                     '-webkit-transform': 'translateY(-56px)',
                     '-moz-transform': 'translateY(-56px)',
                     'transition': 'transform .25s'
-                })
+                });
+                $(".menu-wrapper .menu-wrapper-logo .logo-a .down_img").css({
+                    'display': 'none',
+                });
+                $(".menu-wrapper .menu-wrapper-logo .logo-a .up_img").css({
+                    'display': 'block',
+                });
                 $(".menu-wrapper  .icon-GooglePlaylogo").css({
                     color: "#fff",
                     'transition': 'color .6s'

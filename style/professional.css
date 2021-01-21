@@ -134,11 +134,15 @@
         .allModules .content_item.same_box .flex_layout .text_width.ecological_text_width {
           width: 30%;
           padding: 0 140px 0 0; }
-    .allModules .content_item.news_box .bottom_img {
+    .allModules .content_item.news_box .news_bottom_img {
       position: relative;
       left: 0;
       width: 100%;
-      bottom: 0; }
+      bottom: -4px; }
+      .allModules .content_item.news_box .news_bottom_img.pc {
+        display: block; }
+      .allModules .content_item.news_box .news_bottom_img.mobile {
+        display: none; }
     .allModules .content_item.news_box .news_content {
       width: 100%;
       margin: 0 auto; }
@@ -250,7 +254,7 @@
     height: 40px;
     border-radius: 40px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1204px) {
   .allModules .content_item {
     padding: 27px 0; }
     .allModules .content_item.same_box .flex_layout .text_width {
@@ -282,8 +286,24 @@
       .allModules .content_item.portrait_box .portrait_title {
         margin-left: -50%;
         top: 9%; }
-    .allModules .content_item.news_box .news_content .news_swiper_outer .swiper_btn {
-      display: none; }
+    .allModules .content_item.news_box {
+      padding-bottom: 0; }
+      .allModules .content_item.news_box .news_bottom_img.pc {
+        display: none; }
+      .allModules .content_item.news_box .news_bottom_img.mobile {
+        display: block; }
+      .allModules .content_item.news_box .news_content .portrait_title {
+        top: 8%; }
+      .allModules .content_item.news_box .news_content .news_swiper_outer {
+        top: 30%; }
+        .allModules .content_item.news_box .news_content .news_swiper_outer .swiper_btn {
+          display: none; }
+        .allModules .content_item.news_box .news_content .news_swiper_outer .news_swiper {
+          margin-bottom: 15px; }
+          .allModules .content_item.news_box .news_content .news_swiper_outer .news_swiper .slide_box .slide_content .slide_title {
+            font-size: 17px; }
+          .allModules .content_item.news_box .news_content .news_swiper_outer .news_swiper .slide_box .slide_content .slide_sub_title {
+            font-size: 14px; }
 
   .part_title_item .part_title {
     font-size: 20px;

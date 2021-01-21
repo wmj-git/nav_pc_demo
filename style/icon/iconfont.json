@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "15282657",
+      "name": "电话03",
+      "font_class": "phone",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "6677532",
+      "name": "位置",
+      "font_class": "address",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "6822917",
+      "name": "qq",
+      "font_class": "qq_contact",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
       "icon_id": "967630",
       "name": "搜索",
       "font_class": "search_btn",

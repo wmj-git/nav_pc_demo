@@ -71,7 +71,7 @@ function IsPC() {
 function newsSwiper_mobile() {
     let $win = $(window).width();
     let _isPc = IsPC();
-    if ($win > 768) {
+    if ($win > 1204) {
         news_swiper.params.slidesPerView = 3;
         news_swiper.params.slidesPerGroup = 3;
     } else {
