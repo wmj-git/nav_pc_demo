@@ -38,11 +38,7 @@
 </div>
 <div id="header"></div>
 <!--二级菜单-->
-<div id="pcMenu">
-    <div class="menu-wrapper">
-        <div class="menu-list-wrapper" id="secondNav_pc"></div>
-    </div>
-</div>
+<div id="pcMenu"></div>
 <div id="mobileMenu"></div>
 
 <!-- 将来页面要往这里填充具体的模板内容 -->
@@ -94,9 +90,9 @@
 
 <script>
     window.onload = function () {
-        $("#header").load("header/firstNav.html");
-        $("#secondNav_pc").load("header/secondNav_pc.html");
-        $("#mobileMenu").load("header/secondNav_mobile.html");
+        $("#header").load("public/header/firstNav.html");
+        $("#pcMenu").load("public/header/secondNav_pc.html");
+        $("#mobileMenu").load("public/header/secondNav_mobile.html");
 
         (function () {
             $('loadBg').fadeOut();

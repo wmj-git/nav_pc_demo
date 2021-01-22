@@ -36,11 +36,7 @@
 </div>
 <div id="header"></div>
 <!--二级菜单-->
-<div id="pcMenu">
-    <div class="menu-wrapper">
-        <div class="menu-list-wrapper" id="secondNav_pc"></div>
-    </div>
-</div>
+<div id="pcMenu"></div>
 <div id="mobileMenu"></div>
 
 <!-- 将来页面要往这里填充具体的模板内容 -->
@@ -219,22 +215,6 @@
 <script src="js/secondHeaderNav.js"></script>
 <script src="js/common.js"></script>
 <script src="js/swiper.min.js"></script>
-
-<script>
-    window.onload = function () {
-        $("#header").load("header/firstNav.html");
-        $("#secondNav_pc").load("header/secondNav_pc.html");
-        $("#mobileMenu").load("header/secondNav_mobile.html");
-        $("#footer").load("footer/footer.html");
-        (function () {
-            $('loadBg').fadeOut();
-            setTimeout(function () {
-                $('loadIcon').hide();
-                $('#loading').fadeOut();
-            }, 800);
-        })();
-    }
-</script>
 <script src="js/professional.js"></script>
 </body>
 </html>
