@@ -166,21 +166,22 @@
           width: 50%;
           &.ecological_text_width {
             width: 30%;
-            padding: 0 140px 0 0;
+            padding: 0;
           }
         }
       }
     }
     &.news_box {
+      z-index: 1;
       & .news_bottom_img {
         position: relative;
         left: 0;
         width: 100%;
         bottom: -4px;
-        &.pc{
+        &.pc {
           display: block;
         }
-        &.mobile{
+        &.mobile {
           display: none;
         }
 
@@ -190,13 +191,13 @@
         margin: 0 auto;
         & .portrait_title {
           position: absolute;
-          top: 18%;
+          top: 10%;
           left: 50%;
         }
         & .news_swiper_outer {
           position: absolute;
           width: 70%;
-          top: 30%;
+          top: 50%;
           left: 50%;
           margin-left: -35%;
           text-align: center;
@@ -239,7 +240,7 @@
             }
           }
           & .news_swiper {
-            margin-bottom: 50px;
+            margin-bottom: 1vw;
             & .slide_box {
               background-color: #fff;
               box-shadow: 0 0 20px rgba(40, 40, 40, 0.1);
@@ -325,7 +326,7 @@
   }
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 768px) {
   .allModules {
     & .content_item {
       padding: 27px 0;
@@ -354,12 +355,15 @@
       &.professional_banner {
         padding: 0;
         & .swiper-container .swiper-slide .banner_text {
-          left: 10%;
+          left: 6%;
           & .banner_title {
-            font-size: 20px;
+            font-size: 18px;
+          }
+          & .banner_sub_title {
+            font-size: 16px;
           }
           & .banner_tex {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
@@ -379,15 +383,15 @@
       &.news_box {
         padding-bottom: 0;
         & .news_bottom_img {
-          &.pc{
+          &.pc {
             display: none;
           }
-          &.mobile{
+          &.mobile {
             display: block;
           }
         }
         & .news_content {
-          & .portrait_title{
+          & .portrait_title {
             top: 8%;
           }
           & .news_swiper_outer {
@@ -415,11 +419,11 @@
   }
   .part_title_item {
     & .part_title {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 15px;
     }
     & .part_sub_title {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 24px;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -431,5 +435,11 @@
         padding: 0 20px;
       }
     }
+    & .part_button {
+      font-size: 14px;
+      padding: 6px 20px;
+    }
   }
 }
+
+

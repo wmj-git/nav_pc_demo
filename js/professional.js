@@ -67,20 +67,16 @@ function IsPC() {
     }
     return flag;
 }
-
 function newsSwiper_mobile() {
     let $win = $(window).width();
-    let _isPc = IsPC();
-    if ($win > 1204) {
+    if ($win > 768) {
         news_swiper.params.slidesPerView = 3;
         news_swiper.params.slidesPerGroup = 3;
     } else {
-        console.log('移动端');
         news_swiper.params.slidesPerView = 1;
         news_swiper.params.slidesPerGroup = 1;
     }
 }
-
 newsSwiper_mobile();
 marginFn();
 
