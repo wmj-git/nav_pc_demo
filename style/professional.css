@@ -271,7 +271,9 @@
       padding: 0 10px; }
       .allModules .content_item.same_box .flex_layout .text_width.ecological_text_width {
         padding: 0;
-        width: 40%; }
+        width: 90%;
+        margin: 0 auto;
+        text-align: right; }
     .allModules .content_item.same_box .flex_layout.education_flex {
       top: 25px;
       display: block; }
@@ -287,7 +289,11 @@
       width: 15%;
       height: 100%; }
     .allModules .content_item.same_box .flex_layout.ecological_layout {
-      align-items: baseline; }
+      display: inline-block; }
+      .allModules .content_item.same_box .flex_layout.ecological_layout .ecological_img_outer {
+        width: 90%; }
+      .allModules .content_item.same_box .flex_layout.ecological_layout .right_img {
+        display: none; }
     .allModules .content_item.professional_banner {
       padding: 0; }
       .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text {

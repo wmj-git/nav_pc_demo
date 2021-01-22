@@ -40,116 +40,10 @@
 <!--二级菜单-->
 <div id="pcMenu">
     <div class="menu-wrapper">
-        <div class="menu-list-wrapper">
-            <div class="nav-wrapper" id="secondNav"></div> <!--二级菜单重复的部分-->
-            <div class="nav-detail-wrapper">
-                <div class="second-menu">
-                    <div class="menu-wrapper-logo">
-                        <a class="logo-a" href="">
-                            <img src="images/common/logo.png">
-                        </a>
-                    </div>
-                    <ul class="second-menu-left menu-style">
-                        <li id="item_one">
-                            <a onclick="hashFun('item_one')">关于行知国际部</a>
-                        </li>
-                        <li id="item_two">
-                            <a onclick="hashFun('item_two')">办学理念</a>
-                        </li>
-                        <li id="item_three">
-                            <a onclick="hashFun('item_three')">行知何来</a>
-                        </li>
-                        <li id="item_four">
-                            <a onclick="hashFun('item_four')">吴妈寄语</a>
-                        </li>
-                        <!--   <li id="item_five">
-                               <a onclick="hashFun('item_five')">二级导航five</a>
-                           </li>
-                           <li id="item_six">
-                               <a onclick="hashFun('item_six')">二级导航six</a>
-                           </li>
-                           <li id="item_seven">
-                               <a onclick="hashFun('item_seven')">二级导航seven</a>
-                           </li>-->
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="menu-list-wrapper" id="secondNav_pc"></div>
     </div>
 </div>
-<div id="mobileMenu">
-    <div class="menu-wrapper mobile-menu-wrapper">
-        <div class="menu-list-wrapper">
-            <div class="nav-wrapper">
-                <div class="mobile-news-menu" id="second-mobile-news-menu">
-                    <span class="list"><i class="iconfont icon-first_nav"></i></span>
-                    <div class="logo"><a href="/?lang=zh-cn"><img src="images/common/logo_icon.png" class="mobile_img_logo"></a>
-                    </div>
-                    <ul class="sliderMenu">
-                        <li class="menuType">
-                            <a href="international_index.html" class="aLink" key="index">关于行知国际部</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-
-                        <li class="menuType">
-                            <a href="news.html" class="aLink" key="news">新闻动态</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-
-                        <li class="menuType">
-                            <a href="#out" class="aLink" key="out">国外留学</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                        <li class="menuType">
-                            <a href="#concate" class="aLink" key="concate">国际交流</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                        <li class="menuType">
-                            <a href="#joinin" class="aLink" key="joinin">入学</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                        <li class="menuType">
-                            <a href="#ai" class="aLink" key="ai">智慧校园</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                        <li class="menuType">
-                            <a href="#height" class="aLink" key="height">国际高中部</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                        <li class="menuType">
-                            <a href="#ask" class="aLink" key="ask">应聘</a>
-                            <span class="rightIcon"><i class="iconfont icon-right"></i></span>
-                        </li>
-                    </ul>
-                    <div class="opacity"></div>
-                </div>
-            </div>
-            <div class="nav-detail-wrapper">
-                <div class="second-menu-mobile">
-                    <span class="mainTips">
-                        <span class="mainTitle"><a>首页</a></span>
-                        <span class="mainIcon"><img src="images/common/logo_icon.png" class="mobile_img_logo"></span>
-                    </span>
-                </div>
-                <ul class="secondSlideMenu">
-                    <span></span>
-                    <li class="secondListTip">
-                        <a onclick="hashFun('item_one')">关于行知国际部</a>
-                    </li>
-                    <li class="secondListTip">
-                        <a onclick="hashFun('item_two')">办学理念</a>
-                    </li>
-                    <li class="secondListTip">
-                        <a onclick="hashFun('item_three')">行知何来</a>
-                    </li>
-                    <li class="secondListTip">
-                        <a onclick="hashFun('item_four')">吴妈寄语</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<div id="mobileMenu"></div>
 
 <!-- 将来页面要往这里填充具体的模板内容 -->
 <div class="allModules">
@@ -201,7 +95,9 @@
 <script>
     window.onload = function () {
         $("#header").load("header/firstNav.html");
-        $("#secondNav").load("header/secondNav.html");
+        $("#secondNav_pc").load("header/secondNav_pc.html");
+        $("#mobileMenu").load("header/secondNav_mobile.html");
+
         (function () {
             $('loadBg').fadeOut();
             setTimeout(function () {
