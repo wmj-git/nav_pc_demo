@@ -191,7 +191,7 @@
         margin: 0 auto;
         & .portrait_title {
           position: absolute;
-          top: 10%;
+          top: 25%;
           left: 50%;
         }
         & .news_swiper_outer {
@@ -265,12 +265,14 @@
                   padding-bottom: 15px;
                   border-bottom: 1px solid #e6e6e6;
                   margin-bottom: 15px;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  display: -webkit-box;
-                  -webkit-box-orient: vertical;
-                  -webkit-line-clamp: 1;
-                  word-break: break-all;
+                  & span{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    word-break: break-all;
+                  }
                 }
                 & .slide_sub_title {
                   font-size: 16px;

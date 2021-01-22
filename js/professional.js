@@ -24,13 +24,15 @@ mySwiper.el.onmouseout = function () {
 }
 
 
-/*新闻中心-一次轮播三个*/
 
+/*新闻中心-一次轮播三个*/
 let news_swiper = new Swiper('.news_swiper', {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
-    loop: true,
+    loop: false,
+    observer: true,
+    observeSlideChildren: true,
     loopFillGroupWithBlank: true,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -53,32 +55,44 @@ function marginFn() {
     $(".flex_item").css({"height": portrait_flex_item_width, 'border-radius': portrait_flex_item_width / 2});
 }
 
-function IsPC() {
-    var userAgentInfo = navigator.userAgent;
-    var Agents = ["Android", "iPhone",
-        "SymbianOS", "Windows Phone",
-        "iPad", "iPod"];
-    var flag = true;
-    for (var v = 0; v < Agents.length; v++) {
-        if (userAgentInfo.indexOf(Agents[v]) > 0) {
-            flag = false;
-            break;
-        }
-    }
-    return flag;
-}
 function newsSwiper_mobile() {
     let $win = $(window).width();
     if ($win > 768) {
-        news_swiper.params.slidesPerView = 3;
-        news_swiper.params.slidesPerGroup = 3;
+        news_swiper.destroy(true,true);
+        news_swiper = new Swiper('.news_swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: true,
+        });
     } else {
-        news_swiper.params.slidesPerView = 1;
-        news_swiper.params.slidesPerGroup = 1;
+        news_swiper.destroy(true,true);
+        news_swiper = new Swiper('.news_swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: true,
+        });
     }
 }
-newsSwiper_mobile();
-marginFn();
+
+
+$(function () {
+    newsSwiper_mobile();
+    marginFn();
+});
 
 window.onresize = function () {
     marginFn();
