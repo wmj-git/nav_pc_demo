@@ -5,6 +5,8 @@ $(function () {
     $("#pcMenu").load("public/header/secondNav_pc.html");
     $("#mobileMenu").load("public/header/secondNav_mobile.html");
     $("#footer").load("public/footer/footer.html");
+    $("#float_nav").load("public/float_nav/float_nav.html");
+
     (function () {
         $('loadBg').fadeOut();
         setTimeout(function () {

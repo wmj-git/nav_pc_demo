@@ -25,7 +25,10 @@ a{
 input, textarea, select, a, button:focus {
   outline: none;
 }
-
+#float_nav{
+  position: relative;
+  z-index: 2;
+}
 #loading{
   position: fixed;
   z-index: 400;

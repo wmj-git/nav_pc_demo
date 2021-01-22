@@ -8,3 +8,7 @@ function navHighLight(obj) {
         }
     });
 }
+
+function toTop() {
+    document.documentElement.scrollTop = document.body.scrollTop = 0;
+}
