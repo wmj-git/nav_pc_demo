@@ -27,7 +27,7 @@ input, textarea, select, a, button:focus {
 }
 #float_nav{
   position: relative;
-  z-index: 2;
+  z-index: 101;
 }
 #loading{
   position: fixed;

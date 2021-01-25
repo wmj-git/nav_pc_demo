@@ -15,6 +15,8 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 5px 0 rgba(20, 34, 67, 0.1); }
+    .float_nav .nav_item.nav_weixin .hover_box {
+      height: 140px; }
     .float_nav .nav_item:last-child {
       border-bottom: none; }
     .float_nav .nav_item .iconfont {
@@ -24,8 +26,30 @@
       font-size: 15px;
       color: #666; }
     .float_nav .nav_item:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #e4e4e4;
+      color: black; }
       .float_nav .nav_item:hover p {
         color: #000; }
+      .float_nav .nav_item:hover .hover_box {
+        transition: all 300ms linear;
+        transform: translateX(0);
+        background-color: #ffffff; }
+    .float_nav .nav_item .hover_box {
+      position: absolute;
+      right: 78px;
+      top: 0;
+      box-shadow: 0 0 15px #e4e4e4;
+      height: 81px;
+      width: 140px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(340px); }
+
+@media screen and (max-width: 768px) {
+  .float_nav {
+    transform: translateY(100px); } }
 
 /*# sourceMappingURL=float.css.map */

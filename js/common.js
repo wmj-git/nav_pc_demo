@@ -10,5 +10,15 @@ function navHighLight(obj) {
 }
 
 function toTop() {
-    document.documentElement.scrollTop = document.body.scrollTop = 0;
+    let timer = null;
+    cancelAnimationFrame(timer);
+    timer = requestAnimationFrame(function fn(){
+        let oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(oTop > 0){
+            scrollBy(0,-200);
+            timer = requestAnimationFrame(fn);
+        }else{
+            cancelAnimationFrame(timer);
+        }
+    });
 }
