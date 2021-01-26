@@ -19,9 +19,6 @@
           text-align: center;
           font-size: 18px;
           background: #fff;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
           display: flex;
           -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -31,6 +28,7 @@
           -ms-flex-align: center;
           -webkit-align-items: center;
           align-items: center;
+          background-position: inherit;
           & .banner_text {
             position: absolute;
             left: 18%;

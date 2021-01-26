@@ -17,9 +17,6 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -28,7 +25,8 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
-        align-items: center; }
+        align-items: center;
+        background-position: inherit; }
         .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text {
           position: absolute;
           left: 18%;
@@ -513,4 +511,4 @@
   .allModules .content_item.news_box.news_inter_box {
     height: 150vw !important; } }
 
-/*# sourceMappingURL=main_page.cssp */
+/*# sourceMappingURL=main_page.css.map */

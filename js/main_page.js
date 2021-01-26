@@ -28,7 +28,7 @@ function bannerSwiper() {
             el: '.banner_pagination',
         },
         effect: 'fade',
-        autoplay: true
+        autoplay: false
     });
     mySwiper.el.onmouseover = function () {
         mySwiper.autoplay.stop();
