@@ -16,11 +16,11 @@ $(function () {
     })();
     newsSwiper_init();
 });
-
 window.onresize = function () {
     marginFn();
     newsSwiper_init();
 }
+
 
 function bannerSwiper() {
     let mySwiper = new Swiper('.banner_swiper', {

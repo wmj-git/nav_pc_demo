@@ -15,7 +15,7 @@ function toTop() {
     timer = requestAnimationFrame(function fn(){
         let oTop = document.body.scrollTop || document.documentElement.scrollTop;
         if(oTop > 0){
-            scrollBy(0,-200);
+            scrollBy(0,-100);
             timer = requestAnimationFrame(fn);
         }else{
             cancelAnimationFrame(timer);

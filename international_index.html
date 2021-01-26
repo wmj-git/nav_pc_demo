@@ -6,19 +6,17 @@
     initial-scale=1.0,
     maximum-scale=1.0,
     user-scalable=0">
-    <title>行知</title>
+    <title>行知国际教育部</title>
+    <link rel="stylesheet" href="style/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="style/common.css"/>
     <link rel="stylesheet" type="text/css" href="style/menu.css"/>
     <link rel="stylesheet" type="text/css" href="style/secondHeader.css"/>
     <link rel="stylesheet" href="style/icon/iconfont.css">
-    <script src="js/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="style/float.css">
+    <link rel="stylesheet" href="style/professional.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="js/footer.js"></script>
     <style>
-        .content_item {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-
         video {
             width: 100%;
             height: 100vh;
@@ -31,7 +29,7 @@
     </style>
 </head>
 <body>
-
+<div id="float_nav"></div>
 <div id="loading">
     <div class="loadBg"></div>
     <div class="loadIcon"></div>
@@ -43,65 +41,189 @@
 
 <!-- 将来页面要往这里填充具体的模板内容 -->
 <div class="allModules">
-    <div class="content_item">
-        <video autoplay="autoplay" loop="loop" muted="muted">
-            <source src="style/video.mp4" type="video/mp4"/>
-        </video>
+    <div class="professional_banner content_item">
+        <div class="professional_outer">
+            <div class="swiper-container banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                         style="background: url('images/international/banner.jpg') no-repeat center; background-size: cover">
+                        <div class="banner_text">
+                            <p class="banner_title">自然、和谐、宁静、书香</p>
+                            <p class="banner_sub_title">行知职业教育为每个学生提供舒适的教育环境</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                         style="background: url('images/professional/banner_02.jpg') no-repeat center; background-size: cover">
+                        Slide 2
+                    </div>
+                    <div class="swiper-slide"
+                         style="background: url('images/professional/banner_03.jpg') no-repeat center; background-size: cover">
+                        Slide 3
+                    </div>
+                </div>
+                <div class="swiper-pagination banner_pagination"></div>
+            </div>
+            <div class="banner_bg">
+                <div class="banner_bottom_img">
+                    <img src="images/international/banner_bg.png" class="banner_bottom_img">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="recruitSwipe content_item" data-component="item_one" style="height: 1100px; background-color: #cccccc;">
-        二级导航one内容内容内容
+    <div class="recruitSwipe content_item portrait_box" data-component="item_one">
+        <img src="images/professional/portrait_bg.png" class="portrait_bg">
+        <div class="portrait_title part_title_item">
+            <p class="part_title">行知人画像</p>
+            <p class="part_sub_title padding_sub_title">以创造具有新时代校园文化特色，培养企业技能人才为培养目标</p>
+        </div>
+        <div class="portrait_flex">
+            <div class="flex_item"><img src="images/professional/portrait_img_01.png" class="portrait_img"></div>
+            <div class="flex_item"><img src="images/professional/portrait_img_02.png" class="portrait_img"></div>
+            <div class="flex_item"><img src="images/professional/portrait_img_03.png" class="portrait_img"></div>
+        </div>
     </div>
-    <div class="recruitSwipe content_item" data-component="item_one" style="height: 1100px; background-color: #cccccc;">
-        二级导航one内容内容内容
+    <div class="nav-left-picture content_item same_box" data-component="item_two">
+        <div class="education_flex flex_layout">
+            <div class="education_text part_title_item text_width">
+                <p class="part_title">教育观</p>
+                <p class="part_sub_title">我们相信：教育是农业，是一件慢的、科学的事。 在行知， 育人，比教授知识更重要。学会学习，比学什么知识更重要。 用面向未来的眼</p>
+                <button class="part_button">了解更多</button>
+            </div>
+            <div class="education_inter_img_outer irregular_img_outer">
+                <div class="education_img irregular_img">
+                    <img src="images/international/education_bg.png">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="grainPortrait content_item" data-component="item_two"
-         style="height: 1100px; background-color: #6bcec8;">
-        二级导航two内容内容内容
+    <div class="nav-left-picture content_item same_box no-padding" data-component="item_four">
+        <div class="flex_layout ecological_layout ecological_inter_layout">
+            <div class="irregular_img_outer ecological_inter_img_outer">
+                <div class="education_img irregular_img ">
+                    <img src="images/international/ecological_bg.png">
+                </div>
+            </div>
+            <div class="ecological_inter_text_width part_title_item text_width">
+                <p class="part_title">校园生态</p>
+                <p class="part_sub_title">引领每个师生不断在成功中找到生命的乐趣，让每一个行知人都能幸福健康地成长</p>
+                <button class="part_button">了解更多</button>
+            </div>
+        </div>
     </div>
-    <div class="nav-about-contain content_item" data-component="item_three"
-         style="height: 1100px; background-color: #eaeaea;">
-        二级导航three内容内容内容
+    <div class="nav-left-picture content_item same_box" data-component="item_four">
+        <div class="class_layout">
+            <div class="class_layout_outer ">
+                <img src="images/international/class_bg.png" class="class_bg">
+            </div>
+            <div class="portrait_title part_title_item class_title">
+                <p class="part_title">课程与育人</p>
+                <p class="part_sub_title padding_sub_title">通过天赋教育实现求真、向善、逐美的核心价值信仰，让青春期的孩子拥有健康的
+                    人格和独立面对AI时代新要求的能力，发现自己潜在价值，发挥自己的天赋为未来的生活自我赋能，实现自我教育、自我调整和自我成长</p>
+            </div>
+        </div>
     </div>
-    <div class="nav-left-picture content_item" data-component="item_four"
-         style="height: 1100px; background-color: rgba(156,142,240,0.49);">
-        二级导航four内容内容内容
+    <div class="nav-right-picture content_item same_box" data-component="item_five">
+        <div class="flex_layout result_flex">
+            <div class="part_title_item text_width">
+                <p class="part_title">成果展示</p>
+                <p class="part_sub_title">学校为行知学子提供畅通的升学及就业管道，学生可通过3+2和对口高职升入大学学习，享受与普通高中学生同样的大学生活和学历认证。近</p>
+                <button class="part_button">了解更多</button>
+            </div>
+            <div class="irregular_img_outer result_inter_img_outer">
+                <div class="education_img irregular_img ">
+                    <img src="images/international/result_bg.png">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="nav-right-picture content_item" data-component="item_five"
-         style="height: 1100px; background-color: rgba(91,192,204,0.67);">
-        二级导航five内容内容内容
-    </div>
-    <div class="onlyImgAndRemarks content_item" data-component="item_six"
-         style="height: 1100px; background-color: rgba(99,234,153,0.38);">
-        二级导航six内容内容内容
-    </div>
-    <div class="nav-know-more content_item" data-component="item_seven"
-         style="height: 1100px; background-color: rgba(234,201,105,0.42);">
-        二级导航seven内容内容内容
-    </div>
+    <div class="content_item news_box news_inter_box" data-component="item_six">
+        <div class="news_content">
+            <div class="portrait_title part_title_item">
+                <p class="part_title" id="dad">新闻中心</p>
+                <p class="part_sub_title padding_sub_title">学校秉承陶行知先生的生活教育理念，尊重孩子的独特生命体验</p>
+            </div>
+            <div class="news_swiper_outer">
+                <div class="swiper-container news_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <div class="news_img_box">
+                                    <div class="news_img_radius">
+                                        <img src="images/international/news_01.jpg" class="news_border_img">
+                                    </div>
+                                </div>
+                                <div class="slide_content">
+                                    <p class="slide_title"><span>1传递爱心希望 加强民族团结</span></p>
+                                    <p class="slide_sub_title"><span>涓涓细水成海洋，颗颗爱心变希望。为帮助家庭贫困学生解决心理缺乏关爱、学习缺乏帮助、生活缺乏支持的...</span></p>
+                                    <p class="news_time">12-02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <div class="news_img_box">
+                                    <div class="news_img_radius">
+                                        <img src="images/international/news_01.jpg" class="news_border_img">
+                                    </div>
+                                </div>
+                                <div class="slide_content">
+                                    <p class="slide_title"><span>【3】递爱心希望 加强民族团结</span></p>
+                                    <p class="slide_sub_title">
+                                        <span>涓涓细水成海洋，颗颗爱心变希望。为帮助家庭贫困学生解决心理缺乏关爱、学习缺乏帮助、生活缺乏支持的...</span></p>
+                                    <p class="news_time">12-02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <div class="news_img_box">
+                                    <div class="news_img_radius">
+                                        <img src="images/international/news_01.jpg" class="news_border_img">
+                                    </div>
+                                </div>
+                                <div class="slide_content">
+                                    <p class="slide_title"><span>【 递爱心希望】加强民族团结</span></p>
+                                    <p class="slide_sub_title">
+                                        <span>涓涓细水成海洋，颗颗爱心变希望。为帮助家庭贫困学生解决心理缺乏关爱、学习缺乏帮助、生活缺乏支持的...</span></p>
+                                    <p class="news_time">12-02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                                <div class="news_img_box">
+                                    <div class="news_img_radius">
+                                        <img src="images/international/news_01.jpg" class="news_border_img">
+                                    </div>
+                                </div>
+                                <div class="slide_content">
+                                    <p class="slide_title"><span>【dasd】加强民族团结</span></p>
+                                    <p class="slide_sub_title">
+                                        <span>涓涓细水成海洋，颗颗爱心变希望。为帮助家庭贫困学生解决心理缺乏关爱、学习缺乏帮助、生活缺乏支持的...</span></p>
+                                    <p class="news_time">12-02</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part_title_item">
+                    <button class="part_button">查看更多</button>
+                </div>
+            </div>
+        </div>
 
+    </div>
 </div>
-
+</div>
+<div class="footer_container" data-bind="international" id="footer"></div>
+</div>
 
 <!-- 公共的js  -->
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/secondHeaderNav.js"></script>
 <script src="js/common.js"></script>
-
-<script>
-    window.onload = function () {
-        $("#header").load("public/header/firstNav.html");
-        $("#pcMenu").load("public/header/secondNav_pc.html");
-        $("#mobileMenu").load("public/header/secondNav_mobile.html");
-
-        (function () {
-            $('loadBg').fadeOut();
-            setTimeout(function () {
-                $('loadIcon').hide();
-                $('#loading').fadeOut();
-            }, 800);
-        })();
-    }
-</script>
+<script src="js/swiper.min.js"></script>
+<script src="js/professional.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <div class="footer">
-    <img src="images/professional/footer_bg_pc.png" class="footer_img pc">
-    <img src="images/professional/footer_bg_mobile.png" class="footer_img mobile">
+    <img src="" class="footer_img pc">
+    <img src="" class="footer_img mobile">
     <div class="footer_content footer_flex_layout">
         <div class="footer_left">
             <img src="images/professional/footer_logo.png">
@@ -44,3 +44,23 @@
         <iframe style="display:none;" class="qq_iframe" src=""></iframe>
     </div>
 </div>
+<script>
+    $(function () {
+        let _parent = $(".footer_img.pc").parent().parent().attr('data-bind');
+        console.log('pdad', _parent);
+        if (_parent == 'international') {
+            let __img_pc = "images/international/footer_bg_pc.png";
+            $(".footer_img.pc")[0].src = __img_pc;
+            let __img_mobile = "images/international/footer_bg_mobile.png";
+            $(".footer_img.mobile")[0].src = __img_mobile;
+            return false;
+
+        } else if (_parent == 'professional') {
+            let _img_pc = "images/professional/footer_bg_pc.png";
+            $(".footer_img.pc")[0].src = _img_pc;
+            let _img_mobile = "images/professional/footer_bg_mobile.png";
+            $(".footer_img.mobile")[0].src = _img_mobile;
+            return false;
+        }
+    });
+</script>

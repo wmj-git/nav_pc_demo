@@ -223,7 +223,7 @@ function mouse_enter_right_Fn() {
     let _bototm = figure_bottom_Val();
     $(".start_body .start_page").append("<span class='bg_hover'></span>");
     $(".bg_hover").css('opacity', 0);
-    $(".bg_hover").stop().animate({opacity: '1'},1000);
+    $(".bg_hover").stop().animate({opacity: '0.8'},1000);
     $("#svg").css({'opacity': "1", 'left': "26%", "height": "100%", "bottom":_bototm});
     SVG_NS = "http://www.w3.org/2000/svg";
     document.getElementById("svg").innerHTML = "";
@@ -232,6 +232,7 @@ function mouse_enter_right_Fn() {
 function mouse_leave_right_Fn() {
     $("#svg").css({'opacity': "0", "height": "0"});
     $(".bg_hover").stop().animate({opacity: '0'},1000);
+    $(".bg_hover").remove();
     setTimeout(function () {
         SVG_NS = "";
         document.getElementById("svg").innerHTML = "";
@@ -242,7 +243,7 @@ function mouse_enter_Fn() {
     let _bototm = figure_bottom_Val();
     $(".start_body .start_page").append("<span class='bg_hover'></span>");
     $(".bg_hover").css('opacity', 0);
-    $(".bg_hover").stop().animate({opacity: '1'},1000);
+    $(".bg_hover").stop().animate({opacity: '0.8'},1000);
     $("#svg").css({'opacity': "1", 'left': "-26%", "height": "100%", "bottom":_bototm});
     SVG_NS = "http://www.w3.org/2000/svg";
     document.getElementById("svg").innerHTML = "";
@@ -251,6 +252,7 @@ function mouse_enter_Fn() {
 
 function mouse_leave_Fn() {
     $(".bg_hover").stop().animate({opacity: '0'},1000);
+    $(".bg_hover").remove();
     $("#svg").css({'opacity': "0", "height": "0"});
     setTimeout(function () {
         SVG_NS = "";

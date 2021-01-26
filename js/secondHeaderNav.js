@@ -134,7 +134,7 @@ function scrollNav(scrollInstance) {
         var _this = $(this);
         menuNav.each(function () {
             var navThis = $(this);
-            if (_this.offset().top < scrollInstance + 60 && _this.attr('data-component') == navThis.attr('id')) {
+            if (_this.offset().top < scrollInstance + 120 && _this.attr('data-component') == navThis.attr('id')) {
                 navThis.find('a').css('color', logoColor);
                 navThis.siblings().find('a').css('color', '#999');
             }
