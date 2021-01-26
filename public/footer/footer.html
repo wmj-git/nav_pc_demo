@@ -47,12 +47,18 @@
 <script>
     $(function () {
         let _parent = $(".footer_img.pc").parent().parent().attr('data-bind');
-        console.log('pdad', _parent);
         if (_parent == 'international') {
             let __img_pc = "images/international/footer_bg_pc.png";
             $(".footer_img.pc")[0].src = __img_pc;
             let __img_mobile = "images/international/footer_bg_mobile.png";
             $(".footer_img.mobile")[0].src = __img_mobile;
+            $(".footer").css('background-color', "#fff");
+
+            /*banner底部背景*/
+            let _banner_bg_pc = "images/international/banner_bg_pc.png";
+            $(".banner_bottom_img.pc")[0].src = _banner_bg_pc;
+            let _banner_bg_mobile = "images/international/banner_bg_mobile.png";
+            $(".banner_bottom_img.mobile")[0].src = _banner_bg_mobile;
             return false;
 
         } else if (_parent == 'professional') {
@@ -60,6 +66,12 @@
             $(".footer_img.pc")[0].src = _img_pc;
             let _img_mobile = "images/professional/footer_bg_mobile.png";
             $(".footer_img.mobile")[0].src = _img_mobile;
+
+            /*banner底部背景*/
+            let _banner_bg_pc = "images/professional/banner_bg_pc.png";
+            $(".banner_bottom_img.pc")[0].src = _banner_bg_pc;
+            let _banner_bg_mobile = "images/professional/banner_bg_mobile.png";
+            $(".banner_bottom_img.mobile")[0].src = _banner_bg_mobile;
             return false;
         }
     });

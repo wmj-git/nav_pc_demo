@@ -51,6 +51,8 @@
         position: absolute;
         bottom: 0;
         display: block; }
+        .allModules .content_item.professional_banner .banner_bg .banner_bottom_img.mobile {
+          display: none; }
     .allModules .content_item.professional_banner .swiper-pagination-bullet {
       width: 24px;
       height: 5px;
@@ -437,6 +439,10 @@
           font-size: 16px; }
         .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_tex {
           font-size: 14px; }
+      .allModules .content_item.professional_banner .banner_bg .banner_bottom_img.mobile {
+        display: block; }
+      .allModules .content_item.professional_banner .banner_bg .banner_bottom_img.pc {
+        display: none; }
     .allModules .content_item.portrait_box {
       padding: 0; }
       .allModules .content_item.portrait_box .portrait_flex {
@@ -507,4 +513,4 @@
   .allModules .content_item.news_box.news_inter_box {
     height: 150vw !important; } }
 
-/*# sourceMappingURL=professional.css.map */
+/*# sourceMappingURL=main_page.cssp */

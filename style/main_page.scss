@@ -58,6 +58,9 @@
           position: absolute;
           bottom: 0;
           display: block;
+          &.mobile{
+            display: none;
+          }
         }
       }
       .swiper-pagination-bullet {
@@ -592,6 +595,16 @@
           }
           & .banner_tex {
             font-size: 14px;
+          }
+        }
+        & .banner_bg{
+          & .banner_bottom_img {
+            &.mobile{
+              display: block;
+            }
+            &.pc{
+              display: none;
+            }
           }
         }
       }
