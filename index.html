@@ -34,8 +34,9 @@
 
     </div>
 
-    <div class="figure_svg">
-        <svg id="svg"></svg>
+    <div class="figure_tree">
+        <!--<svg id="svg"></svg>-->
+        <canvas id="canvas"></canvas>
     </div>
     <div class="figure_box">
         <!--<img src="images/start/figure.gif" class="figure left">-->
@@ -44,21 +45,25 @@
     <div class="start_center">
         <div class="center_box letter_font">
             <div class="center_item">
-                <div class="center_btn" onclick="internationalFn()" onmouseenter="mouse_enter_Fn()"
+                <div class="center_btn center_btn1" onclick="internationalFn()" onmouseenter="mouse_enter_Fn()"
                      onmouseleave="mouse_leave_Fn()">
 
                     <div class="icon education">
-                        <img src="images/start/education.png">
+                        <img src="images/start/education.png" class="enter_img">
+                        <img src="images/start/education1.png" class="leave_img">
+
                     </div>
                     <span set-lan="html:international.btn_name"></span>
                 </div>
                 <p set-lan="html:international.sub_title"></p>
             </div>
             <div class="center_item">
-                <div class="center_btn" onclick="professionalFn()" onmouseenter="mouse_enter_right_Fn()"
-                     onmouseleave="mouse_leave_right_Fn()">
+                <div class="center_btn" onclick="professionalFn()" onmouseover="mouse_enter_right_Fn()"
+                     onmouseout="mouse_leave_right_Fn()">
                     <div class="icon">
-                        <img src="images/start/book.png">
+                        <img src="images/start/book.png" class="enter_img">
+                        <img src="images/start/book1.png" class="leave_img">
+
                     </div>
                     <span set-lan="html:professional.btn_name"></span>
                 </div>
@@ -74,6 +79,8 @@
 </html>
 <script src="js/start/lang.js"></script>
 <script src="js/start/bluebird.min.js"></script>
-<script src="js/start/grow_up.js"></script>
+<!--<script src="js/start/grow_up.js"></script>-->
+<script src="js/start/canvas_tree.js"></script>
+
 
 

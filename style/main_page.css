@@ -26,7 +26,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-        background-position: inherit; }
+        background-position: inherit !important; }
         .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text {
           position: absolute;
           left: 18%;
@@ -144,8 +144,8 @@
             height: 100%; }
       .allModules .content_item.same_box .flex_layout .text_width {
         text-align: left;
-        padding: 0 160px;
-        width: 50%; }
+        width: 50%;
+        padding: 0 15px; }
         .allModules .content_item.same_box .flex_layout .text_width.ecological_text_width {
           width: 30%;
           padding: 0; }
@@ -429,14 +429,16 @@
       top: 20%; }
     .allModules .content_item.professional_banner {
       padding: 0; }
-      .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text {
-        left: 6%; }
-        .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_title {
-          font-size: 18px; }
-        .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_sub_title {
-          font-size: 16px; }
-        .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_tex {
-          font-size: 14px; }
+      .allModules .content_item.professional_banner .swiper-container .swiper-slide {
+        background-position: center !important; }
+        .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text {
+          left: 6%; }
+          .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_title {
+            font-size: 18px; }
+          .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_sub_title {
+            font-size: 16px; }
+          .allModules .content_item.professional_banner .swiper-container .swiper-slide .banner_text .banner_tex {
+            font-size: 14px; }
       .allModules .content_item.professional_banner .banner_bg .banner_bottom_img.mobile {
         display: block; }
       .allModules .content_item.professional_banner .banner_bg .banner_bottom_img.pc {
@@ -510,5 +512,16 @@
 @media screen and (max-width: 320px) {
   .allModules .content_item.news_box.news_inter_box {
     height: 150vw !important; } }
+@media screen and (min-width: 1025px) {
+  .allModules .content_item.same_box .flex_layout .text_width {
+    padding: 0 160px; } }
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  .allModules .content_item.news_box.news_inter_box .news_content .news_swiper_outer {
+    top: 30%; }
+
+  .allModules .content_item.news_box .news_content .portrait_title {
+    top: 10%; }
+  .allModules .content_item.news_box .news_content .news_swiper_outer {
+    top: 40%; } }
 
 /*# sourceMappingURL=main_page.css.map */

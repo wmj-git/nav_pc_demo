@@ -27,7 +27,17 @@ a {
 input, textarea, select, a, button:focus {
   outline: none;
 }
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  html {
+    font-size: 94% !important; /* 15.04÷16=94% */
+  }
+}
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 118% !important; /* 20÷16=125% */
+  }
 
+}
 .letter_font {
   letter-spacing: 4px;
   font-size: 1rem;
@@ -48,7 +58,7 @@ input, textarea, select, a, button:focus {
     z-index: -1;
     & .bg_hover {
       //background: url("../images/start/page_bg_02.jpg") no-repeat center;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.9);
       width: 100%;
       height: 100%;
       background-size: cover;
@@ -115,6 +125,9 @@ input, textarea, select, a, button:focus {
       position: absolute;
       transition: opacity linear 1s;
     }
+    & .figure_tree{
+      //z-index: 100;
+    }
     & .start_center {
       position: absolute;
       bottom: 200px;
@@ -162,6 +175,12 @@ input, textarea, select, a, button:focus {
                 position: relative;
                 filter: drop-shadow(41px 0 #e9d20f);
                 -webkit-filter: drop-shadow(41px 0 #e9d20f);
+                &.leave_img{
+                  display: none;
+                }
+                &.enter_img{
+                  display: block;
+                }
               }
             }
             &:hover {
@@ -169,7 +188,16 @@ input, textarea, select, a, button:focus {
               border-color: rgba(234, 212, 25, 0.2);
               color: #ead419;
               cursor: pointer;
-              & img {
+              & img{
+                &.leave_img{
+                  display: block;
+                }
+                &.enter_img{
+                  display: none;
+                }
+              }
+              /*& img {
+
                 transform: translate(-41px, 0);
                 -webkit-transform: translate(-41px, 0);
                 -ms-transform: translate(-41px, 0);
@@ -180,7 +208,7 @@ input, textarea, select, a, button:focus {
                 -webkit-transform: translate(-57px, 0);
                 -ms-transform: translate(-57px, 0);
                 -o-transform: translate(-57px, 0);
-              }
+              }*/
             }
             & img {
               margin-right: 1.5rem;
@@ -195,7 +223,7 @@ input, textarea, select, a, button:focus {
       color: rgba(255, 255, 255, .6);
       text-align: center;
       width: 100%;
-      font-size: .7rem;
+      font-size: .9rem;
       padding: 0 10rem;
     }
   }

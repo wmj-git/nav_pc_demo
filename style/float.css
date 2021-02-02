@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0; }
 
+.float_box {
+  position: relative;
+  z-index: 101; }
+
 .float_nav {
   position: fixed;
   right: 10px;
@@ -48,8 +52,113 @@
       justify-content: center;
       transform: translateX(340px); }
 
+/*mobile*/
+.float_shortcuts {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  display: none; }
+  .float_shortcuts .plug-menu {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 999;
+    -moz-box-shadow: 0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+    background-color: #388ff4;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #388ff4), color-stop(100%, #346dc8));
+    background-image: -webkit-linear-gradient(top, #388ff4, #346dc8);
+    background-image: -moz-linear-gradient(top, #388ff4, #346dc8);
+    background-image: -o-linear-gradient(top, #388ff4, #346dc8);
+    background-image: linear-gradient(top, #388ff4, #346dc8); }
+    .float_shortcuts .plug-menu span {
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: url(../images/common/plugmenu.png) no-repeat;
+      background-size: 28px 28px;
+      text-indent: -999px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -14px;
+      margin-left: -14px;
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 200ms; }
+      .float_shortcuts .plug-menu span.open {
+        -webkit-animation-name: open;
+        -webkit-transform: rotate(135deg); }
+      .float_shortcuts .plug-menu span.close {
+        -webkit-animation-name: close;
+        -webkit-transform: rotate(0deg); }
+  .float_shortcuts .plug-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    -moz-box-shadow: 0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+    background: #388ff4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    z-index: 998;
+    -webkit-transition: -webkit-transform 200ms; }
+    .float_shortcuts .plug-btn span {
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -12px;
+      margin-left: -12px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: 24px 24px; }
+      .float_shortcuts .plug-btn span .iconfont {
+        font-size: 24px;
+        color: #fff; }
+    .float_shortcuts .plug-btn.plug-btn1.close, .float_shortcuts .plug-btn.plug-btn2.close, .float_shortcuts .plug-btn.plug-btn3.close, .float_shortcuts .plug-btn.plug-btn4.close, .float_shortcuts .plug-btn.plug-btn5.close {
+      -webkit-transform: translate(0, 0) rotate(0deg); }
+    .float_shortcuts .plug-btn.plug-btn1.open {
+      -webkit-transform: translate(0, -125px) rotate(720deg); }
+    .float_shortcuts .plug-btn.plug-btn2.open {
+      -webkit-transform: translate(41px, -107px) rotate(720deg); }
+    .float_shortcuts .plug-btn.plug-btn3.open {
+      -webkit-transform: translate(80px, -83px) rotate(720deg); }
+    .float_shortcuts .plug-btn.plug-btn4.open {
+      -webkit-transform: translate(107px, -44px) rotate(720deg); }
+    .float_shortcuts .plug-btn.plug-btn5.open {
+      -webkit-transform: translate(125px, 0) rotate(720deg); }
+    .float_shortcuts .plug-btn.plug-btn6.open {
+      display: block;
+      width: 310px;
+      height: 310px;
+      border-radius: 310px;
+      background-color: rgba(255, 255, 255, 0);
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      z-index: 997;
+      left: -170px;
+      top: -170px;
+      overflow: hidden; }
+    .float_shortcuts .plug-btn.plug-btn6.close {
+      display: none; }
+
 @media screen and (max-width: 768px) {
   .float_nav {
-    transform: translateY(100px); } }
+    display: none; }
+
+  .float_shortcuts {
+    display: block; } }
 
 /*# sourceMappingURL=float.css.map */

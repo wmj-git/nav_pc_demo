@@ -25,10 +25,25 @@ a{
 input, textarea, select, a, button:focus {
   outline: none;
 }
-#float_nav{
-  position: relative;
-  z-index: 101;
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  html {
+    font-size: 94% !important; /* 15.04÷16=94% */
+  }
 }
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94% !important; /* 15.04÷16=94% */
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 118% !important; /* 20÷16=125% */
+  }
+
+}
+
 #loading{
   position: fixed;
   z-index: 400;
